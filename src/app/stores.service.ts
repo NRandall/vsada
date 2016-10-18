@@ -6,43 +6,43 @@ export class StoresService {
 
   constructor() {
   this.stores = [
-    {
-      name: 'PAST Vintage',
-      address: ['120 W. Main, Mesa, 85201'],
-      map: {
-        lat: 33.4153065,
-        lng: -111.8346656,
-      },
-      tags: [
-        'Mid-Century Modern',
-        'Furniture',
-        'Retro',
-        'Danish'
-      ],
-      description: 'Who says you can’t live in the past? Meet PAST: the brainchild of four co-owners who merged their\
-       backgrounds in graphic design, photography, journalism and business management to create the vintage furniture\
-        and home decor shop they always dreamed of. Our aim is to not only show you how to incorporate vintage styles\
-         into your home, but also make it affordable to do so. Our team’s relentless quest to find the finest pieces\
-          from the past ensures you’ll have the most beautiful present.',
-      hero: 'http://24rcle3xxiqq3u6gz62gczyh.wpengine.netdna-cdn.com/wp-content/uploads/past-vinta.jpg',
-      pics: [
-        'https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/11953144_1652765258271494_7433514891133886577_n\
-        .jpg?oh=63885ec909ccab6c2ee4b498d0aa7a96&oe=583BDE54',
-        'https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/13962525_1755467308001288_2028628013531203059_n\
-        .jpg?oh=1f3d2f407bc9e5f6313d6a3351dbc55b&oe=5878C1E9',
-        'https://scontent.fphx1-2.fna.fbcdn.net/t31.0-8/12138474_1662118714002815_4936162802093071243_o.jpg',
-        'https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/11041191_1647655358782484_7884207339641999001_n\
-        .jpg?oh=eff365fda8c5f84a78e06cf3c59d630d&oe=587FBD6C'
-      ],
-      social: {
-        instagram: 'http://instagram.com/pastvintage',
-        facebook: 'http://facebook.com/pastvintageshop'
-      },
-      contact: {
-        email: 'pastvintage@gmail.com'
-      },
-      region: 'east'
-    },
+    //{
+    //   name: 'PAST Vintage',
+    //   address: ['120 W. Main, Mesa, 85201'],
+    //   map: {
+    //     lat: 33.4153065,
+    //     lng: -111.8346656,
+    //   },
+    //   tags: [
+    //     'Mid-Century Modern',
+    //     'Furniture',
+    //     'Retro',
+    //     'Danish'
+    //   ],
+    //   description: 'Who says you can’t live in the past? Meet PAST: the brainchild of four co-owners who merged their\
+    //    backgrounds in graphic design, photography, journalism and business management to create the vintage furniture\
+    //     and home decor shop they always dreamed of. Our aim is to not only show you how to incorporate vintage styles\
+    //      into your home, but also make it affordable to do so. Our team’s relentless quest to find the finest pieces\
+    //       from the past ensures you’ll have the most beautiful present.',
+    //   hero: 'http://24rcle3xxiqq3u6gz62gczyh.wpengine.netdna-cdn.com/wp-content/uploads/past-vinta.jpg',
+    //   pics: [
+    //     'https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/11953144_1652765258271494_7433514891133886577_n\
+    //     .jpg?oh=63885ec909ccab6c2ee4b498d0aa7a96&oe=583BDE54',
+    //     'https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/13962525_1755467308001288_2028628013531203059_n\
+    //     .jpg?oh=1f3d2f407bc9e5f6313d6a3351dbc55b&oe=5878C1E9',
+    //     'https://scontent.fphx1-2.fna.fbcdn.net/t31.0-8/12138474_1662118714002815_4936162802093071243_o.jpg',
+    //     'https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/11041191_1647655358782484_7884207339641999001_n\
+    //     .jpg?oh=eff365fda8c5f84a78e06cf3c59d630d&oe=587FBD6C'
+    //   ],
+    //   social: {
+    //     instagram: 'http://instagram.com/pastvintage',
+    //     facebook: 'http://facebook.com/pastvintageshop'
+    //   },
+    //   contact: {
+    //     email: 'pastvintage@gmail.com'
+    //   },
+    //   region: 'east'
+    // },
 //////////////////////////////////////////////////////
     {
       name: 'ANTIQUES ON CAMELBACK, L.L.C.',
@@ -355,6 +355,54 @@ export class StoresService {
         site: 'antiqueplazamesa.com',
         phone: '480-833-4844',
         email: 'antiqueplaza@gmail.com'
+      },
+      region: 'east'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Call it New/Call it Antique',
+      address: [
+        '2049 W. Broadway Rd, Mesa,85202'
+      ],
+      map: {
+        lat: 33.406286,
+        lng: -111.876038
+      },
+      tags: [
+        'Antiques',
+        'Vintage',
+        'Furniture',
+        'Consignment',
+        'Collectibles',
+        'Mall',
+      ],
+      description: '<h3>43,000sf - 230 Dealers - 1000s of Consignors</h3><br/><br/><b>CALL IT ANTIQUE</b>\
+       – is our Antique Mall with over 230 Dealers. With 350 combined spaces between showcases and booths\
+        there should be no reason why you’d be walking around empty handed. What do we have you may ask??\
+         Antiques, Vintage, Mid-Century, Rustic, Shabby, Furniture, Art, Collectibles, Retro, Games, Records,\
+          Jewelry, Estate Finds, Home Décor, Tools, Toys, and SO MUCH MORE!!<br/><br/><b>CALL IT NEW</b> – is\
+           our Consignment and Resale center up front with 1000s of Consignors. Find gently used newer and\
+            older items at great prices. Keep an eye out for our constantly rotating tag colors. We are\
+             always accepting items from Consignors – Clothing and Accessories, Furniture, Home Décor,\
+              Records, CDs/DVDs, Books, Shoes, Jewelry, Housewares, Collectibles, Games, Toys, and so much more!!',
+      hero: './assets/store-images/CIN/hero.png',
+      pics: [
+        './assets/store-images/CIN/1.jpg',
+        './assets/store-images/CIN/2.jpg',
+        './assets/store-images/CIN/3.jpg',
+        './assets/store-images/CIN/4.jpg',
+        './assets/store-images/CIN/5.jpg',
+        './assets/store-images/CIN/6.jpg',
+        './assets/store-images/CIN/7.jpg'
+      ],
+      social: {
+        facebook: 'https://www.facebook.com/CallitNewCallitAntiqueMesa/',
+        instagram: 'https://www.instagram.com/CallitNewCallitAntique/'
+      },
+      contact: {
+        site: 'CallitNewCallitAntique.com',
+        phone: '480-464-1234',
+        email: 'callitnewcallitantique@gmail.com'
       },
       region: 'east'
     },
