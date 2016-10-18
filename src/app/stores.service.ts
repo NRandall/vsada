@@ -91,7 +91,8 @@ export class StoresService {
       tags: [
          'Furniture',
          'Jewelry',
-         'Primitive'
+         'Primitive',
+         'Mall'
       ],
       description: 'Shop where the dealers shop! Voted "BEST ANTIQUE SHOP" by East Valley Tribune - Main Street\
        Antique Mall - 7260 E. Main St. –Masa Az 85207(E of Power RD). phone (480) 924-1 122 – Locally owned.\
@@ -175,6 +176,7 @@ export class StoresService {
         lng: -112.063382
       },
       tags: [
+        'Mall',
       ],
       description: 'ANTIQUES ON CENTRAL has been in business for nearly 30 years. With over 40 dealers,\
        we offer a wide variety of fabulous finds. Our selections include estate jewelry, high end costume\
@@ -320,6 +322,7 @@ export class StoresService {
         lng: -111.834773
       },
       tags: [
+        'Mall',
       ],
       description: 'The oldest antique mall in Mesa, the Antique Plaza has spent the last twenty years servicing\
        the Valley with a truly unique selection of items.</br>Over the years we’ve collected more than 150 dealers\

@@ -20,7 +20,6 @@ export class ShopListComponent implements OnInit {
   constructor(storesService: StoresService) {
     this.stores = storesService.getStores()
     .sort(function(a, b){
-      console.log(a.name);
       let keyA = a.name.toUpperCase(),
           keyB = b.name.toUpperCase();
       return keyA < keyB ? -1 : keyA > keyB ? 1 : 0;
