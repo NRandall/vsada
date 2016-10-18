@@ -1,7 +1,7 @@
 .hero {
   width: 100%;
   height: 75vh;
-  background-image: url("./app/assets/cactus.jpeg");
+  background-image: url("assets/cactus.jpeg");
   background-size: cover;
 }
 
