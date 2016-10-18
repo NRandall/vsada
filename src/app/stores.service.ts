@@ -6,7 +6,7 @@ export class StoresService {
 
   constructor() {
   this.stores = [
-    //{
+    // {
     //   name: 'PAST Vintage',
     //   address: ['120 W. Main, Mesa, 85201'],
     //   map: {
