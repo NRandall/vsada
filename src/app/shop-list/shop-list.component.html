@@ -1,0 +1,20 @@
+<div class="row">
+  <div *ngFor="let store of stores" class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="img-container">
+        <img [attr.src]="store.hero" alt="{{store.name}} hero">
+      </div>
+      <div class="caption">
+        <h4 class="store-name text-uppercase">{{store.name}}</h4>
+        <!-- <p class="description" [innerHTML]="store.description">
+          <a href="/detailLink">more</a>
+        </p> -->
+        <p [innerHTML]="store.address[0]"></p>
+        <!-- <sebm-google-map  [latitude]="store.map.lat" [longitude]="store.map.lng" [zoom]="zoom" [scrollwheel]="false" [mapDraggable]="false">
+          <sebm-google-map-marker [latitude]="store.map.lat" [longitude]="store.map.lng"></sebm-google-map-marker>
+        </sebm-google-map> -->
+        <!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
+      </div>
+    </div>
+  </div>
+</div>

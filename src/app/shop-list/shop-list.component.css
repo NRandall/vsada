@@ -1,0 +1,46 @@
+.sebm-google-map-container {
+  height: 140px;
+}
+
+/*.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;    
+  max-height: 32px;     
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}*/
+
+.store-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 14px; 
+  max-height: 14px; 
+  -webkit-line-clamp: 1; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.img-container {
+  width: 100%;
+  height: 225px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 8px solid #fff;
+}
+
+.img-container:hover {
+  border-bottom: 8px solid teal;
+}
+
+img {
+  position: absolute;
+  left: -1000%;
+  right: -1000%;
+  top: -1000%;
+  bottom: -1000%;
+  margin: auto;
+  
+  height: 100%;  
+}
