@@ -62,13 +62,13 @@ export class StoresService {
         decorating your home, business, and garden.  Incorporate your own special heirlooms in addition to selecting\
          from our inventory and those items we locate for you.  We also help with set dressing for film and theater.\
           <br/>Estate dispersal consultations, sales, and buy-outs. Your concierge for all things vintage!',
-      hero: '/assets/store-images/AOC/hero.jpg',
+      hero: './assets/store-images/AOC/hero.jpg',
       pics: [
-        '/assets/store-images/AOC/1.jpg',
-        '/assets/store-images/AOC/2.jpg',
-        '/assets/store-images/AOC/3.jpg',
-        '/assets/store-images/AOC/4.jpg',
-        '/assets/store-images/AOC/5.jpg',
+        './assets/store-images/AOC/1.jpg',
+        './assets/store-images/AOC/2.jpg',
+        './assets/store-images/AOC/3.jpg',
+        './assets/store-images/AOC/4.jpg',
+        './assets/store-images/AOC/5.jpg',
       ],
       social: {
 
@@ -109,15 +109,15 @@ export class StoresService {
                   a year with as many as 110 vendors.<br/><br/>Other multi-vendor antique stores in the area, so plan to make\
                    a day in East Mesa.<br/><br/>Join our email list or follow us on Facebook or Twitter to be the first to see\
                     what new merchandise has arrived and events that are taking place at Main Street Antique Mall.',
-      hero: '/assets/store-images/MSAM/hero.jpg',
+      hero: './assets/store-images/MSAM/hero.jpg',
       pics: [
-        '/assets/store-images/MSAM/1.jpg',
-        '/assets/store-images/MSAM/2.jpg',
-        '/assets/store-images/MSAM/3.jpg',
-        '/assets/store-images/MSAM/4.jpg',
-        '/assets/store-images/MSAM/5.jpg',
-        '/assets/store-images/MSAM/6.jpg',
-        '/assets/store-images/MSAM/7.jpg'
+        './assets/store-images/MSAM/1.jpg',
+        './assets/store-images/MSAM/2.jpg',
+        './assets/store-images/MSAM/3.jpg',
+        './assets/store-images/MSAM/4.jpg',
+        './assets/store-images/MSAM/5.jpg',
+        './assets/store-images/MSAM/6.jpg',
+        './assets/store-images/MSAM/7.jpg'
       ],
       social: {
         facebook: 'https://www.facebook.com/Main-Street-Antique-Mall-135847359801281/',
@@ -146,13 +146,13 @@ export class StoresService {
       description: 'Antiques, fine art, traditional furniture, distinctive gifts and decorative objects.\
        <br/>My emphasis is on fine porcelain. Antiguedades, arte, muebles y regalos de distincion.<br/>Owner:\
         Harriet von Merck Palmer<br/>Located within Antiques On Central',
-      hero: '/assets/store-images/NN/hero.jpg',
+      hero: './assets/store-images/NN/hero.jpg',
       pics: [
-        '/assets/store-images/NN/1.jpg',
-        '/assets/store-images/NN/2.jpg',
-        '/assets/store-images/NN/3.jpg',
-        '/assets/store-images/NN/4.jpg',
-        '/assets/store-images/NN/5.jpg',
+        './assets/store-images/NN/1.jpg',
+        './assets/store-images/NN/2.jpg',
+        './assets/store-images/NN/3.jpg',
+        './assets/store-images/NN/4.jpg',
+        './assets/store-images/NN/5.jpg',
       ],
       social: {
         facebook: 'https://www.facebook.com/antiquesoncentral1/'
@@ -185,14 +185,14 @@ export class StoresService {
             current events, our favorite referrals, and individual items that our dealers offer. If you would\
              like to be notified via email of these events, please contact the store or fill out the simple form\
               on our website.<br/>Partners:<br/>Cliff Sharar<br/>Doris Leis<br/>Sylvia Wells',
-      hero: '/assets/store-images/AOCnt/hero.jpg',
+      hero: './assets/store-images/AOCnt/hero.jpg',
       pics: [
-        '/assets/store-images/AOCnt/1.jpg',
-        '/assets/store-images/AOCnt/2.jpg',
-        '/assets/store-images/AOCnt/3.jpg',
-        '/assets/store-images/AOCnt/4.jpg',
-        '/assets/store-images/AOCnt/5.jpg',
-        '/assets/store-images/AOCnt/6.jpg',
+        './assets/store-images/AOCnt/1.jpg',
+        './assets/store-images/AOCnt/2.jpg',
+        './assets/store-images/AOCnt/3.jpg',
+        './assets/store-images/AOCnt/4.jpg',
+        './assets/store-images/AOCnt/5.jpg',
+        './assets/store-images/AOCnt/6.jpg',
       ],
       social: {
         facebook: 'https://www.facebook.com/antiquesoncentral1/'
@@ -220,15 +220,15 @@ export class StoresService {
         fine china, cut glass, crystal stemware, silver, and Asian art. There are many unusual gift items\
         and home accessories. I am always buying quality merchandise. <br/>THE COLLECTION WITHIN ANTIQUES\
         ON CENTRAL.<br/>Owner - Dorothy Flood',
-      hero: '/assets/store-images/TC/hero.jpg',
+      hero: './assets/store-images/TC/hero.jpg',
       pics: [
-        '/assets/store-images/TC/1.jpg',
-        '/assets/store-images/TC/2.jpg',
-        '/assets/store-images/TC/3.jpg',
-        '/assets/store-images/TC/4.jpg',
-        '/assets/store-images/TC/5.jpg',
-        '/assets/store-images/TC/6.jpg',
-        '/assets/store-images/TC/7.jpg',
+        './assets/store-images/TC/1.jpg',
+        './assets/store-images/TC/2.jpg',
+        './assets/store-images/TC/3.jpg',
+        './assets/store-images/TC/4.jpg',
+        './assets/store-images/TC/5.jpg',
+        './assets/store-images/TC/6.jpg',
+        './assets/store-images/TC/7.jpg',
       ],
       social: {
         facebook: 'https://www.facebook.com/antiquesoncentral1/'
@@ -255,15 +255,15 @@ export class StoresService {
       description: 'Quilts, fine estate jewelry, sterling, china and pottery, as well as many other interesting\
        and charming items. Shop with the Snoop Sister for items that you or someone you love will treasure, use,\
        and enjoy.<br/>Located within Antiques On Central.<br/>Owner - Paula Banks',
-      hero: '/assets/store-images/PJSC/hero.jpg',
+      hero: './assets/store-images/PJSC/hero.jpg',
       pics: [
-        '/assets/store-images/PJSC/1.jpg',
-        '/assets/store-images/PJSC/2.jpg',
-        '/assets/store-images/PJSC/3.jpg',
-        '/assets/store-images/PJSC/4.jpg',
-        '/assets/store-images/PJSC/5.jpg',
-        '/assets/store-images/PJSC/6.jpg',
-        '/assets/store-images/PJSC/7.jpg',
+        './assets/store-images/PJSC/1.jpg',
+        './assets/store-images/PJSC/2.jpg',
+        './assets/store-images/PJSC/3.jpg',
+        './assets/store-images/PJSC/4.jpg',
+        './assets/store-images/PJSC/5.jpg',
+        './assets/store-images/PJSC/6.jpg',
+        './assets/store-images/PJSC/7.jpg',
       ],
       social: {
         facebook: 'https://www.facebook.com/antiquesoncentral1/'
@@ -291,13 +291,13 @@ export class StoresService {
        jewelry. I also offer fine sterling silver, crystal, porcelain, and other small treasures.<br/>Come and\
        visit my space for all of your personal and gifting needs. Dealer #818<br/>Located within Antiques On\
        Central<br/>Owner - Merle Jo Finks',
-      hero: '/assets/store-images/T4U/hero.jpg',
+      hero: './assets/store-images/T4U/hero.jpg',
       pics: [
-        '/assets/store-images/T4U/1.jpg',
-        '/assets/store-images/T4U/2.jpg',
-        '/assets/store-images/T4U/3.jpg',
-        '/assets/store-images/T4U/4.jpg',
-        '/assets/store-images/T4U/5.jpg',
+        './assets/store-images/T4U/1.jpg',
+        './assets/store-images/T4U/2.jpg',
+        './assets/store-images/T4U/3.jpg',
+        './assets/store-images/T4U/4.jpg',
+        './assets/store-images/T4U/5.jpg',
       ],
       social: {
         facebook: 'https://www.facebook.com/antiquesoncentral1/'
@@ -338,11 +338,11 @@ export class StoresService {
                    sprawled about and no couch) he brings into the shop to sell for a great price.<br/><br/>At the Antique\
                     Plaza we stray away from stuffy (we may be a little dusty, but never stuffy!) to bring you great items\
                      for even better prices. You might not always find what you’re looking for, but you’re sure to find something better.',
-      hero: '/assets/store-images/AP/hero.jpg',
+      hero: './assets/store-images/AP/hero.jpg',
       pics: [
-        '/assets/store-images/AP/1.jpg',
-        '/assets/store-images/AP/2.jpg',
-        '/assets/store-images/AP/3.jpg'
+        './assets/store-images/AP/1.jpg',
+        './assets/store-images/AP/2.jpg',
+        './assets/store-images/AP/3.jpg'
       ],
       social: {
         facebook: 'https://www.facebook.com/AntiquePlazaMesa/',
