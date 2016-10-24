@@ -1,3 +1,34 @@
-<p>
-  shop-detail works!
-</p>
+<div class="">
+  <div class="card">
+    <div class="img-container">
+      <div class="main col-sm-10">
+        <img [attr.src]="store.hero" alt="{{store.name}} hero">
+      </div>
+      <div class="side-pics">
+        <div class="col-sm-2 side-pic" *ngFor="let pic of store.pics">
+          <div class="picture">s</div>
+          <!-- <img [attr.src]="pic" alt="{{store.name}}"> -->
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <h3 class="store-name text-uppercase">{{store.name}}</h3>
+      <p class="description" [innerHTML]="store.description">
+        <a href="/detailLink">more</a>
+      </p>
+      <br>
+      <h4 [innerHTML]="store.address[0]"></h4>
+      <sebm-google-map  
+        [latitude]="store.map.lat" 
+        [longitude]="store.map.lng" 
+        [zoom]="zoom" 
+        [scrollwheel]="false" 
+        [mapDraggable]="false">
+        <sebm-google-map-marker 
+          [latitude]="store.map.lat" 
+          [longitude]="store.map.lng">
+        </sebm-google-map-marker>
+      </sebm-google-map>
+    </div>
+  </div>
+</div>
