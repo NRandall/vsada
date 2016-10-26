@@ -1,37 +1,16 @@
 <div class="">
 
-    <swiper class="gallery" [config]="config">
-            <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-            <div class="swiper-slide">Slide 10</div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </swiper>
-
-    <div class="card">
-    <div class="img-container">
-      <div class="main col-sm-10">
-        <img [attr.src]="store.hero" alt="{{store.name}} hero">
-      </div>
-      <div class="side-pics">
-        <div class="col-sm-2 side-pic" *ngFor="let pic of store.pics.slice(0,3)">
-          <div class="picture">s</div>
-          <!-- <img [attr.src]="pic" alt="{{store.name}}"> -->
-        </div>
-      </div>
+  <swiper class="gallery" [config]="config">
+    <div class="swiper-wrapper">
+      <img class="swiper-slide" [src]="store.hero">
+      <img class="swiper-slide" *ngFor="let pic of store.pics" [src]="pic">
     </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </swiper>
+
+  <div class="card">
     <div class="">
       <h3 class="store-name text-uppercase">{{store.name}}</h3>
       <p class="description" [innerHTML]="store.description">
@@ -40,11 +19,11 @@
       <br>
       <h4 [innerHTML]="store.address[0]"></h4>
       <sebm-google-map  
-        [latitude]="store.map.lat" 
-        [longitude]="store.map.lng" 
-        [zoom]="zoom" 
-        [scrollwheel]="false" 
-        [mapDraggable]="false">
+          [latitude]="store.map.lat" 
+          [longitude]="store.map.lng" 
+          [zoom]="zoom" 
+          [scrollwheel]="false" 
+          [mapDraggable]="false">
         <sebm-google-map-marker 
           [latitude]="store.map.lat" 
           [longitude]="store.map.lng">
