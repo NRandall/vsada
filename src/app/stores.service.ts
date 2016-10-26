@@ -3,8 +3,31 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class StoresService {
   stores: Array<any>;
+  store: any;
+  query: string;
+
+  getStores() {
+    return this.stores;
+  };
+
+  setStore(passedStore: any) {
+    this.store = passedStore;
+  }
+
+  getStore() {
+    return this.store;
+  }
+
+  setQuery(query: string) {
+    this.query = query;
+  }
+
+  getQuery() {
+    return this.query;
+  }
 
   constructor() {
+
   this.stores = [
     // {
     //   name: 'PAST Vintage',
@@ -409,9 +432,4 @@ export class StoresService {
 //////////////////////////////////////////////////////
   ];
   }
-
-  getStores() {
-    return this.stores;
-  };
-
 }
