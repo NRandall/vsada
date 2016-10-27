@@ -11,27 +11,50 @@
   </swiper>
 
   <div class="card">
-    <div class="">
-      <h3 class="store-name text-uppercase">{{store.name}}</h3>
-      <p class="description" [innerHTML]="store.description">
-        <a href="/detailLink">more</a>
-      </p>
-      <br>
-      <h4 [innerHTML]="store.address[0]"></h4>
-      <sebm-google-map  
-          [latitude]="store.map.lat" 
-          [longitude]="store.map.lng" 
-          [zoom]="zoom" 
-          [scrollwheel]="false" 
-          [mapDraggable]="false">
-        <sebm-google-map-marker 
-          [latitude]="store.map.lat" 
-          [longitude]="store.map.lng">
-        </sebm-google-map-marker>
-      </sebm-google-map>
-      <i class="fa fa-facebook fa-4x" aria-hidden="true"></i>
-      <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
-      <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
-    </div>
+    <h3 class="store-name text-uppercase">{{store.name}}</h3>
+    <p class="description" [innerHTML]="store.description">
+      <a href="/detailLink">more</a>
+    </p>
+    <hr>
+    <h5 *ngIf="store.contact.email">
+      <a href="mailto:{{store.contact.email}}">
+        <i class="fa fa-envelope fa-lg contact-icon" aria-hidden="true"></i>    
+        {{store.contact.email}}
+      </a>
+    </h5>
+    <h5 *ngIf="store.contact.phone">
+      <a href="tel:{{store.contact.phone}}">
+        <i class="fa fa-phone fa-lg contact-icon" aria-hidden="true"></i>
+        {{store.contact.phone}}
+      </a>
+    </h5>
+    <br>
+    <h4 *ngFor="let address of store.address" [innerHTML]="address"></h4>
+    <sebm-google-map  
+        [latitude]="store.map.lat" 
+        [longitude]="store.map.lng" 
+        [zoom]="zoom" 
+        [scrollwheel]="false" 
+        [mapDraggable]="false">
+      <sebm-google-map-marker
+        [latitude]="store.map.lat" 
+        [longitude]="store.map.lng">
+      </sebm-google-map-marker>
+    </sebm-google-map>
+    <div class="social">
+      <a *ngIf="store.social.facebook" href="{{store.social.facebook}}">
+        <i class="fa fa-facebook fa-4x social-icon" aria-hidden="true"></i>
+      </a>
+      <a *ngIf="store.social.twitter" href="{{store.social.twitter}}">
+        <i class="fa fa-twitter fa-4x social-icon" aria-hidden="true"></i>
+      </a>
+      <a *ngIf="store.social.instagram" href="{{store.social.instagram}}">
+        <i class="fa fa-instagram fa-4x social-icon" aria-hidden="true"></i>
+      </a>
+      <a *ngIf="store.social.pinterest" href="{{store.social.pinterest}}">
+        <i class="fa fa-pinterest fa-4x social-icon" aria-hidden="true"></i>
+      </a>
+    </div>   
   </div>
+  <div class="footer"></div>
 </div>

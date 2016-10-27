@@ -1,51 +1,7 @@
 .sebm-google-map-container {
   height: 300px;
   width: 80%;
-}
-
-.main {
-  height: 399px;
-
-  /*
-  position: relative;
-  border-bottom: 8px solid #fff;*/
-}
-
-.main img {
-  position: absolute;
-  left: -1000%;
-  right: -1000%;
-  top: -1000%;
-  bottom: -1000%;
-  margin: auto;
-  height: 100%;  
-  min-width: 100%;
-}
-
-.side-pics {
-  min-height: 399px;
-
-}
-
-.side-pic {
-  height: 133px;
-  background-color: red;
-}
-.picture{
-  height: 125px;
-  width: 98%;
-  background-color: blue;
-}
-img {
-/*  position: absolute;
-  left: -1000%;
-  right: -1000%;
-  top: -1000%;
-  bottom: -1000%;
-  margin: auto;
-  height: 100%;  
-  min-width: 100%;
-  padding: 4px;*/
+  float: left;
 }
 
 .gallery {
@@ -76,11 +32,29 @@ img {
   align-items: center;
 }
 
+.contact-icon {
+  margin: 0px 5px;
+}
+
+.social {
+  float: right;
+  height: 300px;
+  max-width: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+.social-icon {
+  margin-bottom: 20px;
+}
+
+.footer{
+  height: 370px;
+}
+
 @media (min-width: 876px) {
   .gallery {
-    width: 100%;
     height: 400px;
-    margin: auto;
   }
   .swiper-slide {
     height: 400px;

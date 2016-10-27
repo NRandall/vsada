@@ -32,10 +32,7 @@ export class StoresService {
     // {
     //   name: 'PAST Vintage',
     //   address: ['120 W. Main, Mesa, 85201'],
-    //   map: {
-    //     lat: 33.4153065,
-    //     lng: -111.8346656,
-    //   },
+    //   map: {lat: 33.415203, lng: -111.834871},
     //   tags: [
     //     'Mid-Century Modern',
     //     'Furniture',
@@ -74,10 +71,7 @@ export class StoresService {
         '835 E. Camelback Rd, Phoenix, 85014',
         '2020 N. Scottsdale Rd, Scottsdale, 85257'
       ],
-      map: {
-        lat: 33.494714,
-        lng: -112.003802
-      },
+      map: {lat: 33.494714, lng: -112.003802},
       tags: [
       ],
       description: 'Longtime dealer and mall owner Stace Robbins has been in the antiques field since settling in\
@@ -107,10 +101,7 @@ export class StoresService {
       address: [
         '7260 E Main Street, Mesa, 85207'
       ],
-      map: {
-        lat: 33.416668,
-        lng: -111.673833
-      },
+      map: {lat: 33.416668, lng: -111.673833},
       tags: [
          'Furniture',
          'Jewelry',
@@ -161,10 +152,7 @@ export class StoresService {
       address: [
         '730 E. Missouri Ave, Phoenix, 85014'
       ],
-      map: {
-        lat: 33.516725,
-        lng: -112.063382
-      },
+      map: {lat: 33.516725, lng: -112.063382},
       tags: [
       ],
       description: 'Antiques, fine art, traditional furniture, distinctive gifts and decorative objects.\
@@ -194,10 +182,7 @@ export class StoresService {
       address: [
         '730 E. Missouri Ave, Phoenix, 85014'
       ],
-      map: {
-        lat: 33.516725,
-        lng: -112.063382
-      },
+      map: {lat: 33.516725, lng: -112.063382},
       tags: [
         'Mall',
       ],
@@ -235,10 +220,7 @@ export class StoresService {
       address: [
         '730 E. Missouri Ave, Phoenix, 85014'
       ],
-      map: {
-        lat: 33.516725,
-        lng: -112.063382
-      },
+      map: {lat: 33.516725, lng: -112.063382},
       tags: [
       ],
       description: 'You will find an interesting collection of formal and informal furniture, porcelain,\
@@ -271,10 +253,7 @@ export class StoresService {
       address: [
         '730 E. Missouri Ave, Phoenix, 85014'
       ],
-      map: {
-        lat: 33.516725,
-        lng: -112.063382
-      },
+      map: {lat: 33.516725, lng: -112.063382},
       tags: [
       ],
       description: 'Quilts, fine estate jewelry, sterling, china and pottery, as well as many other interesting\
@@ -306,10 +285,7 @@ export class StoresService {
       address: [
         '730 E. Missouri Ave, Phoenix, 85014'
       ],
-      map: {
-        lat: 33.516725,
-        lng: -112.063382
-      },
+      map: {lat: 33.516725, lng: -112.063382},
       tags: [
       ],
       description: 'From funky to fine, you will find it here.<br/>I specialize in moderate to high-end costume\
@@ -340,10 +316,7 @@ export class StoresService {
       address: [
         '114 West Main Street, Mesa, 85201'
       ],
-      map: {
-        lat: 33.415433,
-        lng: -111.834773
-      },
+      map: {lat: 33.415433, lng: -111.834773},
       tags: [
         'Mall',
       ],
@@ -387,10 +360,7 @@ export class StoresService {
       address: [
         '2049 W. Broadway Rd, Mesa,85202'
       ],
-      map: {
-        lat: 33.406286,
-        lng: -111.876038
-      },
+      map: {lat: 33.406286, lng: -111.876038},
       tags: [
         'Antiques',
         'Vintage',
