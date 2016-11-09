@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { StoresService } from '../stores.service';
-import * as _ from 'lodash';
 
 @Component({
   selector: 'app-navbar',
@@ -10,13 +9,12 @@ import * as _ from 'lodash';
 export class NavbarComponent implements OnInit {
 
   searchBy(query: string) {
-    console.log(query);
     this.storesService.setQuery(query);
+    console.log(this.storesService.getQuery());
   }
 
   constructor(private storesService: StoresService) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

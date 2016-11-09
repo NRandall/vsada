@@ -1,5 +1,5 @@
 <div class="row">
-  <div *ngFor="let store of stores" class="col-sm-6 col-md-4">
+  <div *ngFor="let store of stores | storeFilter : term" class="col-sm-6 col-md-4">
     <a [routerLink]="['/store']" (click)="logEvent(store)">
       <div class="thumbnail card">
         <div class="img-container">

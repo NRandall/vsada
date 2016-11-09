@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 export class StoresService {
   stores: Array<any>;
   store: any;
-  query: string;
+  query: string = '';
 
   getStores() {
     return this.stores;
@@ -170,7 +170,7 @@ export class StoresService {
         facebook: 'https://www.facebook.com/antiquesoncentral1/'
       },
       contact: {
-        site: 'https://www.antiquesoncentral.com/',
+        site: 'http://antiquesoncentral.com',
         phone: '602-943-3859',
         email: 'antiques@antiquesoncentral.com'
       },
@@ -208,7 +208,7 @@ export class StoresService {
         facebook: 'https://www.facebook.com/antiquesoncentral1/'
       },
       contact: {
-        site: 'https://www.antiquesoncentral.com/',
+        site: 'http://antiquesoncentral.com',
         phone: '602-264-4525',
         email: 'antiques@antiquesoncentral.com'
       },
@@ -241,7 +241,7 @@ export class StoresService {
         facebook: 'https://www.facebook.com/antiquesoncentral1/'
       },
       contact: {
-        site: 'https://www.antiquesoncentral.com/',
+        site: 'http://antiquesoncentral.com',
         phone: '602-264-4525',
         email: 'antiques@antiquesoncentral.com'
       },
@@ -273,7 +273,7 @@ export class StoresService {
         facebook: 'https://www.facebook.com/antiquesoncentral1/'
       },
       contact: {
-        site: 'https://www.antiquesoncentral.com/',
+        site: 'http://antiquesoncentral.com',
         phone: '602-264-4525',
         email: 'antiques@antiquesoncentral.com'
       },
@@ -304,7 +304,7 @@ export class StoresService {
         facebook: 'https://www.facebook.com/antiquesoncentral1/'
       },
       contact: {
-        site: 'https://www.antiquesoncentral.com/',
+        site: 'http://antiquesoncentral.com',
         phone: '602-264-4525',
         email: 'antiques@antiquesoncentral.com'
       },
@@ -348,7 +348,7 @@ export class StoresService {
         instagram: 'https://www.instagram.com/antiqueplaza/'
       },
       contact: {
-        site: 'antiqueplazamesa.com',
+        site: 'http://antiqueplazamesa.com',
         phone: '480-833-4844',
         email: 'antiqueplaza@gmail.com'
       },
@@ -358,7 +358,7 @@ export class StoresService {
     {
       name: 'Call it New/Call it Antique',
       address: [
-        '2049 W. Broadway Rd, Mesa,85202'
+        '2049 W. Broadway Rd, Mesa, 85202'
       ],
       map: {lat: 33.406286, lng: -111.876038},
       tags: [
@@ -393,11 +393,334 @@ export class StoresService {
         instagram: 'https://www.instagram.com/CallitNewCallitAntique/'
       },
       contact: {
-        site: 'CallitNewCallitAntique.com',
+        site: 'http://CallitNewCallitAntique.com',
         phone: '480-464-1234',
         email: 'callitnewcallitantique@gmail.com'
       },
       region: 'east'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Merchant Square',
+      address: [
+        '1509 N. Arizona Ave., Chandler, 85225'
+      ],
+      map: {lat: 33.330828, lng: -111.841001},
+      tags: [
+        'Mall',
+      ],
+      description: 'Arizona’s Largest Antiques and Collectibles Mall, with 40,000 sq. ft. indoors, 18,000 sq.\
+       ft. outdoors in our “Pickers Alley”. With 200+ Merchants, 130 booths, 104 showcases, full of Antiques,\
+       Collectibles, furniture, new Home Décor, and Boutique items.  Also home of Pittsburg Willy’s Gourmet \
+      Hot Dogs and More, serving up Hot Dogs with gourmet toppings, homemade chili, sandwiches, Pierogies, \
+      desserts and now serving breakfast on weekends.</br>Open 7 Days a week: 9 am – 5 pm, and Wed. until 8 pm.',
+      hero: './assets/store-images/MS/hero.jpg',
+      pics: [
+        './assets/store-images/MS/1.jpg',
+        './assets/store-images/MS/2.jpg',
+        './assets/store-images/MS/3.jpg',
+        './assets/store-images/MS/4.jpg',
+      ],
+      social: {
+        facebook: 'https://www.facebook.com/MerchantSquare/',
+        twitter: 'https://twitter.com/themerchsquare',
+        instagram: 'https://www.instagram.com/explore/locations/517508099/merchants-square-antiques-and-decor/'
+      },
+      contact: {
+        site: 'http://merchantsquareantiques.com',
+        phone: '480-792-1919',
+      },
+      region: 'Chandler'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Sudee\'s Antiques',
+      address: [
+        '1509 N. Arizona Ave., Chandler, 85225',
+        '114 W. Main St., Mesa, 85201'
+      ],
+      map: {lat: 33.330828, lng: -111.841001},
+      tags: [
+        'china',
+        'primitives',
+        'glassware',
+        'silver'
+      ],
+      description: 'Antiques to please all collectors including oak & pine, china, primitives, glassware,\
+       silver & etc. Specializing in copper and brass. Established in 1965. Located at Merchants Square\
+        (Booth #3 & #5) and Antique Plaza (Booth #20)',
+      hero: './assets/store-images/SA/hero.jpg',
+      pics: [
+        './assets/store-images/SA/1.jpg',
+      ],
+      social: {
+        facebook: 'https://www.facebook.com/SuDees-Antiques-154653037889853/',
+        twitter: 'https://twitter.com/themerchsquare',
+        instagram: 'https://www.instagram.com/explore/locations/517508099/merchants-square-antiques-and-decor/'
+      },
+      contact: {
+        site: 'http://merchantsquareantiques.com'
+      },
+      region: 'Chandler'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Beyond Expression Antiques',
+      address: [
+        '3817 E. McKellips Rd, Mesa, 85215',
+      ],
+      map: {lat: 33.451509, lng: -111.748513},
+      tags: [
+        'Mall',
+      ],
+      description: 'Beyond Expression Antiques was started in Bedford Hills, New York in 1977 by owners Ron and\
+       Roberta Hopkins.  They were very successful there, written up in several magazines and the New York \
+       Times, and in 1988 decided to move to Mesa, Arizona where they had visited friends and fell in love with\
+        the area. They began by doing antique shows, mostly in California, but also in Houston, Dallas, Reno,\
+         New Orleans, Kansas City, Chicago, Baltimore and Miami. In 1997 they bought an old adobe house at 3817\
+          East McKellips Road in Mesa and opened an antique shop, having gotten tired of traveling so much.\
+            The shop, which was built in the 1920’s is a perfect showcase for their American Victorian\
+             furniture and beautiful glassware, porcelain, silver, clocks, music boxes, lamps and paintings.',
+      hero: './assets/store-images/BEA/hero.jpg',
+      pics: [
+        './assets/store-images/BEA/1.jpg',
+        './assets/store-images/BEA/2.jpg',
+        './assets/store-images/BEA/3.jpg',
+      ],
+      social: {
+        facebook: 'https://www.facebook.com/BeyondExpressionAntiques/',
+      },
+      contact: {
+        site: 'http://www.beyondexpressionantiq.com/',
+        phone: '480-854-7755',
+        email: 'rhop2510@aol.com'
+      },
+      region: 'Mesa'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Downtown Antiques',
+      address: [
+        '114 West Main Street, Mesa, 85201'
+      ],
+      map: {lat: 33.415433, lng: -111.834773},
+      tags: [
+      ],
+      description: 'Located in the heart of downtown Mesa. Filled with wonderful antique furniture, art, \
+      glassware, Prussia, vintage, hats, Art Deco, and lots of miscellaneous.',
+      hero: './assets/store-images/DA/hero.jpg',
+      pics: [
+        './assets/store-images/DA/1.jpg',
+        './assets/store-images/DA/2.jpg',
+        './assets/store-images/DA/3.jpg',
+        './assets/store-images/DA/4.jpg',
+        './assets/store-images/DA/5.jpg',
+        './assets/store-images/DA/6.jpg',
+        './assets/store-images/DA/7.jpg',
+      ],
+      social: {
+        facebook: 'https://www.facebook.com/AntiquePlazaMesa/',
+      },
+      contact: {
+        email: 'downtownantiques@aol.com',
+        phone: '602-909-6195',
+      },
+      region: 'Mesa'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'History By George',
+      address: [
+        '129 W. Main St, Mesa, 85201'
+      ],
+      map: {lat: 33.414859, lng: -111.835303},
+      tags: [
+        'Military',
+        'Mall'
+      ],
+      description: 'Specializing in militaria and historical antiques. Antiques, collectibles, books, prints,\
+       swords, political, sports, tokens, US & foreign coins, medals & stamps.</br></br> George & Ko Notarpole',
+      hero: './assets/store-images/HBG/hero.jpg',
+      pics: [
+        './assets/store-images/HBG/1.jpg',
+        './assets/store-images/HBG/2.jpg',
+        './assets/store-images/HBG/3.jpg',
+        './assets/store-images/HBG/4.jpg',
+        './assets/store-images/HBG/5.jpg',
+        './assets/store-images/HBG/6.jpg',
+      ],
+      social: {
+        facebook: 'https://www.facebook.com/History-By-George-189512091086435/',
+      },
+      contact: {
+        site: 'http://historybygeorge.com/',
+        phone: '480-898-3878',
+      },
+      region: 'Mesa'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'The Glass Urn',
+      address: [
+        '120 W. Main St, Mesa, 85201'
+      ],
+      map: {lat: 33.415203, lng: -111.834871},
+      tags: [
+        'Military',
+        'Mall'
+      ],
+      description: 'Glass stemware matching service, Fostoria, Cambridge, Tiffin, Heisey, etc. Miscellaneous\
+       collectibles. Large collection of vintage linens.',
+      hero: './assets/store-images/TGU/hero.jpg',
+      pics: [
+        './assets/store-images/TGU/1.jpg',
+        './assets/store-images/TGU/2.jpg',
+        './assets/store-images/TGU/3.jpg',
+        './assets/store-images/TGU/4.jpg',
+      ],
+      social: {
+        facebook: 'https://www.facebook.com/glassurnantiques/',
+      },
+      contact: {
+        site: 'http://theglassurn.com/',
+        phone: '480-203-2285',
+      },
+      region: 'Mesa'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Endlich',
+      address: [
+        '120 W. Main St, Mesa, 85201'
+      ],
+      map: {lat: 33.415203, lng: -111.834871},
+      tags: [
+        'Glass'
+      ],
+      description: 'Dealing in Elegant Glass and Depression Era Glass, Cambridge, Duncan Miller, Tiffin, Fire\
+       King, Pyrex, Indiana, Federal and more.',
+      hero: './assets/store-images/TGU/hero.jpg',
+      pics: [
+        './assets/store-images/TGU/1.jpg',
+      ],
+      social: {
+      },
+      contact: {
+        phone: '602-840-1347',
+      },
+      region: 'Phoenix'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Scott Gram Antiques, Inc.',
+      address: [
+        '120 W. Main St, Mesa, 85201'
+      ],
+      map: {lat: 33.415203, lng: -111.834871},
+      tags: [
+        'Glass'
+      ],
+      description: 'BUYING the Best art glass; Tiffany, Steuben, French Cameo including Daum Nancy & Galle, \
+      English cameo glass including Webb, Stevens & Williams.  High end Victorian art glass, also fine jewelry,\
+       sterling silver, bronze, paintings, etc…</br></br>Member ISA (International Society of Appraisers)',
+      hero: './assets/store-images/TGU/hero.jpg',
+      pics: [
+        './assets/store-images/TGU/1.jpg',
+      ],
+      social: {
+      },
+      contact: {
+        phone: '602-705-2503',
+        email: 'sdgram@cox.net'
+      },
+      region: 'Phoenix'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Kacer Enterprises',
+      address: [
+        '5037 N. Central Ave, Phoenix, 85012'
+      ],
+      map: {lat: 33.510193, lng: -112.073444},
+      tags: [
+        'Sterling'
+      ],
+      description: 'Specializing in sterling silver flatware and holloware for obsolete, discontinued, as well\
+       as current patterns. We have a large inventory for you to select that exact piece from, or maybe we can\
+        conduct a search from our nationwide network. By appointment only at Antiques on Central, 5037 N.\
+         Central Avenue, Phoenix, AZ 85012</br></br>Nyla, & Jerry Kacer',
+      hero: './assets/store-images/KE/hero.jpg',
+      pics: [
+        './assets/store-images/KE/1.jpg',
+        './assets/store-images/KE/2.jpg',
+        './assets/store-images/KE/3.jpg',
+      ],
+      social: {
+        facebook: 'https://www.facebook.com/KacerEnterprises/',
+      },
+      contact: {
+        site: 'http://kacerenterprises.com',
+        phone: '480-706-1864',
+        email: 'nyla@mac.com'
+      },
+      region: 'Phoenix'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Picture The Past Antiques',
+      address: [
+        '4802 N. 7th Ave, Phoenix, 85013'
+      ],
+      map: {lat: 33.507771, lng: -112.082501},
+      tags: [
+        'Mall'
+      ],
+      description: 'A nice selection of antique art and prints, old books, photography and paper Americana.\
+       Vintage Mexican and Native American jewelry, curios, basketry and pottery. An assortment of quality \
+       porcelain, china, silver, statuary and furniture with an emphasis on the unusual and antiques of \
+       interest to men. (Located two blocks south of Camelback and the Melrose District light rail stop)',
+      hero: './assets/store-images/PTPA/hero.jpg',
+      pics: [
+        './assets/store-images/PTPA/1.jpg',
+        './assets/store-images/PTPA/2.jpg',
+        './assets/store-images/PTPA/3.jpg',
+        './assets/store-images/PTPA/4.jpg',
+        './assets/store-images/PTPA/5.jpg',
+      ],
+      social: {
+        facebook: 'https://www.facebook.com/Picture-The-Past-Antiques-302388186489940/',
+      },
+      contact: {
+        phone: '602-565-9526',
+      },
+      region: 'Phoenix'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Phoenix Lamps',
+      address: [
+        '2225 E. Indian School Rd, Phoenix, 85013'
+      ],
+      map: {lat: 33.494603, lng: -112.033410},
+      tags: [
+        'Mall'
+      ],
+      description: 'Lamps – Shades – Lamp  & Shade Repairs - Antiques. Over 6,000 shades in stock. Custom lamp\
+       making – antique lamp restoration – rewiring. Largest selection of shades in the country.',
+      hero: './assets/store-images/PL/hero.jpg',
+      pics: [
+        './assets/store-images/PL/1.jpg',
+        './assets/store-images/PL/2.jpg',
+        './assets/store-images/PL/3.jpg',
+        './assets/store-images/PL/4.jpg',
+        './assets/store-images/PL/5.jpg',
+      ],
+      social: {},
+      contact: {
+        site: 'http://www.phoenixlampandshade.com/',
+        phone: '602-955-5640',
+      },
+      region: 'Phoenix'
     },
 //////////////////////////////////////////////////////
   ];

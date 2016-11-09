@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class StoreFilterPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    return null;
+  transform(value, [term]) {
+    return value.filter((item) => term ? item.name.includes(term) : true);
   }
 
 }

@@ -16,6 +16,12 @@
       <a href="/detailLink">more</a>
     </p>
     <hr>
+    <h5 *ngIf="store.contact.site">
+      <a href="{{store.contact.site}}">
+        <i class="fa fa-external-link fa-lg contact-icon" aria-hidden="true"></i>
+        {{store.contact.site | slice : 7}}
+      </a>
+    </h5>
     <h5 *ngIf="store.contact.email">
       <a href="mailto:{{store.contact.email}}">
         <i class="fa fa-envelope fa-lg contact-icon" aria-hidden="true"></i>    

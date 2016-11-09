@@ -1,7 +1,6 @@
 .sebm-google-map-container {
   height: 300px;
-  width: 80%;
-  float: left;
+  width: 100%;
 }
 
 .gallery {
@@ -37,19 +36,25 @@
 }
 
 .social {
-  float: right;
-  height: 300px;
-  max-width: 50px;
+  float: left;
+  position: static;
+  bottom: 300px;
+  left: 95%;
+  width: 100%;
   margin: auto;
   text-align: center;
+  padding-top: 15px;
 }
 
 .social-icon {
+  text-decoration: none;
+  color: #222;
   margin-bottom: 20px;
+  padding-right: 20px;
 }
 
 .footer{
-  height: 370px;
+  height: 40px;
 }
 
 @media (min-width: 876px) {
@@ -58,5 +63,19 @@
   }
   .swiper-slide {
     height: 400px;
+  }
+  .sebm-google-map-container {
+    height: 400px;
+    width: 90%;
+  }
+  .social {
+    float: left;
+    position: relative;
+    bottom: 300px;
+    left: 95%;
+    height: 300px;
+    max-width: 50px;
+    margin: auto;
+    text-align: center;
   }
 }

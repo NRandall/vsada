@@ -8,7 +8,7 @@ import { StoresService } from '../stores.service';
 })
 export class ShopListComponent {
   stores: Array<any>;
-
+  term = this.storesService.getQuery();
   logEvent(store) {
     this.storesService.setStore(store);
   };
