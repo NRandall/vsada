@@ -14,8 +14,10 @@ export class StoresService {
     this.store = passedStore;
   }
 
-  getStore() {
-    return this.store;
+  getStore(id: number) {
+    for (let i = 0; i < this.stores.length; i++) {
+      if (this.stores[i].id === id) { return this.stores[i]; }
+    }
   }
 
   setQuery(query: string) {
@@ -66,6 +68,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'ANTIQUES ON CAMELBACK, L.L.C.',
+      id: 1,
       address: [
         '3601 <small>E. Indian School Rd</small>, Phoenix, 85018',
         '835 E. Camelback Rd, Phoenix, 85014',
@@ -98,6 +101,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'Main Street Antique Mall',
+      id: 2,
       address: [
         '7260 E Main Street, Mesa, 85207'
       ],
@@ -149,6 +153,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'NOBLESSE-NOBLEZA',
+      id: 3,
       address: [
         '730 E. Missouri Ave, Phoenix, 85014'
       ],
@@ -179,6 +184,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'Antiques On Central',
+      id: 4,
       address: [
         '730 E. Missouri Ave, Phoenix, 85014'
       ],
@@ -217,6 +223,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'THE COLLECTION',
+      id: 5,
       address: [
         '730 E. Missouri Ave, Phoenix, 85014'
       ],
@@ -250,6 +257,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'P. J. SNOOP COLLECTIQUES',
+      id: 6,
       address: [
         '730 E. Missouri Ave, Phoenix, 85014'
       ],
@@ -282,6 +290,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'TREASUR4U',
+      id: 7,
       address: [
         '730 E. Missouri Ave, Phoenix, 85014'
       ],
@@ -313,6 +322,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'Antique Plaza',
+      id: 8,
       address: [
         '114 West Main Street, Mesa, 85201'
       ],
@@ -357,6 +367,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'Call it New/Call it Antique',
+      id: 9,
       address: [
         '2049 W. Broadway Rd, Mesa, 85202'
       ],
@@ -402,6 +413,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'Merchant Square',
+      id: 10,
       address: [
         '1509 N. Arizona Ave., Chandler, 85225'
       ],
@@ -435,6 +447,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'Sudee\'s Antiques',
+      id: 11,
       address: [
         '1509 N. Arizona Ave., Chandler, 85225',
         '114 W. Main St., Mesa, 85201'
@@ -466,6 +479,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'Beyond Expression Antiques',
+      id: 12,
       address: [
         '3817 E. McKellips Rd, Mesa, 85215',
       ],
@@ -500,6 +514,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'Downtown Antiques',
+      id: 13,
       address: [
         '114 West Main Street, Mesa, 85201'
       ],
@@ -530,6 +545,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'History By George',
+      id: 14,
       address: [
         '129 W. Main St, Mesa, 85201'
       ],
@@ -561,6 +577,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'The Glass Urn',
+      id: 15,
       address: [
         '120 W. Main St, Mesa, 85201'
       ],
@@ -590,6 +607,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'Endlich',
+      id: 16,
       address: [
         '120 W. Main St, Mesa, 85201'
       ],
@@ -613,6 +631,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'Scott Gram Antiques, Inc.',
+      id: 17,
       address: [
         '120 W. Main St, Mesa, 85201'
       ],
@@ -638,6 +657,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'Kacer Enterprises',
+      id: 18,
       address: [
         '5037 N. Central Ave, Phoenix, 85012'
       ],
@@ -668,6 +688,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'Picture The Past Antiques',
+      id: 19,
       address: [
         '4802 N. 7th Ave, Phoenix, 85013'
       ],
@@ -698,6 +719,7 @@ export class StoresService {
 //////////////////////////////////////////////////////
     {
       name: 'Phoenix Lamps',
+      id: 20,
       address: [
         '2225 E. Indian School Rd, Phoenix, 85013'
       ],

@@ -1,4 +1,11 @@
-<div class="">
+<div *ngIf="!store.id">
+  Loading...
+</div>
+<div *ngIf="store.id" class="store-detail">
+
+  <a class="back-button" [routerLink]="['/']">
+    <i class="fa fa-chevron-circle-left fa-4x" aria-hidden="true"></i>
+  </a>
 
   <swiper class="gallery" [config]="config">
     <div class="swiper-wrapper">
@@ -17,7 +24,7 @@
     </p>
     <hr>
     <h5 *ngIf="store.contact.site">
-      <a href="{{store.contact.site}}">
+      <a href="{{store.contact.site}}" target="_blank">
         <i class="fa fa-external-link fa-lg contact-icon" aria-hidden="true"></i>
         {{store.contact.site | slice : 7}}
       </a>
@@ -37,30 +44,30 @@
     <br>
     <h4 *ngFor="let address of store.address" [innerHTML]="address"></h4>
     <sebm-google-map  
-        [latitude]="store.map.lat" 
-        [longitude]="store.map.lng" 
-        [zoom]="zoom" 
-        [scrollwheel]="false" 
-        [mapDraggable]="false">
-      <sebm-google-map-marker
-        [latitude]="store.map.lat" 
-        [longitude]="store.map.lng">
-      </sebm-google-map-marker>
-    </sebm-google-map>
-    <div class="social">
-      <a *ngIf="store.social.facebook" href="{{store.social.facebook}}">
-        <i class="fa fa-facebook fa-4x social-icon" aria-hidden="true"></i>
-      </a>
-      <a *ngIf="store.social.twitter" href="{{store.social.twitter}}">
-        <i class="fa fa-twitter fa-4x social-icon" aria-hidden="true"></i>
-      </a>
-      <a *ngIf="store.social.instagram" href="{{store.social.instagram}}">
-        <i class="fa fa-instagram fa-4x social-icon" aria-hidden="true"></i>
-      </a>
-      <a *ngIf="store.social.pinterest" href="{{store.social.pinterest}}">
-        <i class="fa fa-pinterest fa-4x social-icon" aria-hidden="true"></i>
-      </a>
-    </div>   
-  </div>
-  <div class="footer"></div>
+    [latitude]="store.map.lat" 
+    [longitude]="store.map.lng" 
+    [zoom]="zoom" 
+    [scrollwheel]="false" 
+    [mapDraggable]="false">
+    <sebm-google-map-marker
+    [latitude]="store.map.lat" 
+    [longitude]="store.map.lng">
+  </sebm-google-map-marker>
+</sebm-google-map>
+<div class="social">
+  <a *ngIf="store.social.facebook" href="{{store.social.facebook}}" target="_blank">
+    <i class="fa fa-facebook fa-4x social-icon" aria-hidden="true"></i>
+  </a>
+  <a *ngIf="store.social.twitter" href="{{store.social.twitter}}" target="_blank">
+    <i class="fa fa-twitter fa-4x social-icon" aria-hidden="true"></i>
+  </a>
+  <a *ngIf="store.social.instagram" href="{{store.social.instagram}}" target="_blank">
+    <i class="fa fa-instagram fa-4x social-icon" aria-hidden="true"></i>
+  </a>
+  <a *ngIf="store.social.pinterest" href="{{store.social.pinterest}}" target="_blank">
+    <i class="fa fa-pinterest fa-4x social-icon" aria-hidden="true"></i>
+  </a>
+</div>   
+</div>
+<div class="footer"></div>
 </div>

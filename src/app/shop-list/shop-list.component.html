@@ -1,6 +1,6 @@
 <div class="row">
   <div *ngFor="let store of stores | storeFilter : term" class="col-sm-6 col-md-4">
-    <a [routerLink]="['/store']" (click)="logEvent(store)">
+    <a [routerLink]="['/store', store.id]" (click)="logEvent(store)">
       <div class="thumbnail card">
         <div class="img-container">
           <img [attr.src]="store.hero" alt="{{store.name}} hero">
