@@ -19,23 +19,24 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Regions <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a (click)=(region(phoenix))>Phoenix</a></li>
-            <li><a (click)=(region(mesa))>Mesa</a></li>
-            <li><a (click)=(region(chandler))>Chandler</a></li>
+            <li><a [routerLink]="['/region', 'phoenix']">Phoenix</a></li>
+            <li><a [routerLink]="['/region', 'mesa']">Mesa</a></li>
+            <li><a [routerLink]="['/region', 'chandler']">Chandler</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Keywords <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Mid-Century Modern</a></li>
-            <li><a href="#">Furniture</a></li>
-            <li><a href="#">Retro</a></li>
-            <li><a href="#">Danish</a></li>
-            <li><a href="#">Jewelry</a></li>
-            <li><a href="#">Primitive</a></li>
-            <li><a href="#">Mall</a></li>
+            <li><a [routerLink]="['/tag', 'midCenturyModern']">Mid-Century Modern</a></li>
+            <li><a [routerLink]="['/tag', 'Furniture']">Furniture</a></li>
+            <li><a [routerLink]="['/tag', 'Retro']">Retro</a></li>
+            <li><a [routerLink]="['/tag', 'Danish']">Danish</a></li>
+            <li><a [routerLink]="['/tag', 'Jewelry']">Jewelry</a></li>
+            <li><a [routerLink]="['/tag', 'Primitive']">Primitive</a></li>
+            <li><a [routerLink]="['/tag', 'Mall']">Mall</a></li>
           </ul>
         </li>
+        <li><a [routerLink]="['/map']">Map</a></li>
       </ul>
       <form class="navbar-form navbar-left">
         <div class="form-group">

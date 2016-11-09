@@ -63,7 +63,7 @@ export class StoresService {
     //   contact: {
     //     email: 'pastvintage@gmail.com'
     //   },
-    //   region: 'east'
+    //   region: 'Mesa'
     // },
 //////////////////////////////////////////////////////
     {
@@ -96,7 +96,7 @@ export class StoresService {
       contact: {
         email: 'stace@staceplace.com'
       },
-      region: 'central'
+      region: 'Phoenix'
     },
 //////////////////////////////////////////////////////
     {
@@ -148,7 +148,7 @@ export class StoresService {
         phone: '480-924-1122',
         email: 'mainstreetantiquemall@gmail.com'
       },
-      region: 'east'
+      region: 'Mesa'
     },
 //////////////////////////////////////////////////////
     {
@@ -179,7 +179,7 @@ export class StoresService {
         phone: '602-943-3859',
         email: 'antiques@antiquesoncentral.com'
       },
-      region: 'central'
+      region: 'Phoenix'
     },
 //////////////////////////////////////////////////////
     {
@@ -218,7 +218,7 @@ export class StoresService {
         phone: '602-264-4525',
         email: 'antiques@antiquesoncentral.com'
       },
-      region: 'central'
+      region: 'Phoenix'
     },
 //////////////////////////////////////////////////////
     {
@@ -252,7 +252,7 @@ export class StoresService {
         phone: '602-264-4525',
         email: 'antiques@antiquesoncentral.com'
       },
-      region: 'central'
+      region: 'Phoenix'
     },
 //////////////////////////////////////////////////////
     {
@@ -285,7 +285,7 @@ export class StoresService {
         phone: '602-264-4525',
         email: 'antiques@antiquesoncentral.com'
       },
-      region: 'central'
+      region: 'Phoenix'
     },
 //////////////////////////////////////////////////////
     {
@@ -317,7 +317,7 @@ export class StoresService {
         phone: '602-264-4525',
         email: 'antiques@antiquesoncentral.com'
       },
-      region: 'central'
+      region: 'Phoenix'
     },
 //////////////////////////////////////////////////////
     {
@@ -362,7 +362,7 @@ export class StoresService {
         phone: '480-833-4844',
         email: 'antiqueplaza@gmail.com'
       },
-      region: 'east'
+      region: 'Mesa'
     },
 //////////////////////////////////////////////////////
     {
@@ -408,7 +408,7 @@ export class StoresService {
         phone: '480-464-1234',
         email: 'callitnewcallitantique@gmail.com'
       },
-      region: 'east'
+      region: 'Mesa'
     },
 //////////////////////////////////////////////////////
     {

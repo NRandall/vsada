@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ShopDetailComponent } from './shop-detail/shop-detail.component';
 import { ShopListComponent } from './shop-list/shop-list.component';
 import { StoreFilterPipe } from './store-filter.pipe';
+import { MapComponent } from './map/map.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { StoreFilterPipe } from './store-filter.pipe';
     ShopListComponent,
     ShopDetailComponent,
     NavbarComponent,
-    StoreFilterPipe
+    StoreFilterPipe,
+    MapComponent
   ],
   imports: [
     BrowserModule,
