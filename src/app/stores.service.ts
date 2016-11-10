@@ -130,8 +130,8 @@ export class StoresService {
                     what new merchandise has arrived and events that are taking place at Main Street Antique Mall.',
       hero: './assets/store-images/MSAM/hero.jpg',
       pics: [
-        './assets/store-images/MSAM/1.jpg',
-        './assets/store-images/MSAM/2.jpg',
+        './assets/store-images/MSAM/10.jpg',
+        './assets/store-images/MSAM/9.jpg',
         './assets/store-images/MSAM/3.jpg',
         './assets/store-images/MSAM/4.jpg',
         './assets/store-images/MSAM/5.jpg',
@@ -625,9 +625,9 @@ export class StoresService {
       name: 'Kacer Enterprises',
       id: 18,
       address: [
-        '5037 N. Central Ave, Phoenix, 85012'
+        '730 E Missouri Ave, Phoenix, 85014'
       ],
-      map: {lat: 33.510193, lng: -112.073444},
+      map: {lat: 33.516725, lng: -112.063382},
       tags: [
         'Sterling',
         'Silver'
@@ -788,7 +788,6 @@ export class StoresService {
       social: {
       },
       contact: {
-        site: 'http://www.ethicalaz.com/bradburysappraisalsinc',
         phone: '602-253-7253',
       },
       region: 'Phoenix'
