@@ -43,7 +43,7 @@
 }
 
 .img-container:hover {
-  border-bottom: 8px solid teal;
+  border-bottom: 8px solid #444;
 }
 
 img {
