@@ -350,7 +350,7 @@ export class StoresService {
       hero: './assets/store-images/AP/hero.jpg',
       pics: [
         './assets/store-images/AP/a1.jpg',
-        './assets/store-images/AP/a5.jpg',
+        './assets/store-images/AP/d5.jpg',
         './assets/store-images/AP/a6.jpg',
         './assets/store-images/AP/a7.jpg',
         './assets/store-images/AP/a8.jpg',
