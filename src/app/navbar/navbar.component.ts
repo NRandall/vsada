@@ -7,16 +7,16 @@ import { StoresService } from '../stores.service';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  terms:Array<any> = [
+  terms: Array<any> = [
     'Mid-Century Modern',
-    'Furniture', 
-    'Retro', 
-    'Danish', 
-    'Jewelry', 
-    'Primitive', 
-    'Mall', 
-    'Antiques', 
-    'Vintage', 
+    'Furniture',
+    'Retro',
+    'Danish',
+    'Jewelry',
+    'Primitive',
+    'Mall',
+    'Antiques',
+    'Vintage',
     'Consignment',
     'Collectibles',
     'china',
@@ -24,8 +24,11 @@ export class NavbarComponent implements OnInit {
     'glassware',
     'silver',
     'Military',
+    'Store',
     'Glass',
-    'Sterling'
+    'Sterling',
+    'Store',
+    'Service'
   ];
 
   searchBy(query: string) {

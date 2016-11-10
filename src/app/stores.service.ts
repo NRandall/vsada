@@ -35,7 +35,7 @@ export class StoresService {
   this.stores = [
     {
       name: 'PAST Vintage',
-      id: 23,
+      id: 45,
       address: ['120 W. Main, Mesa, 85201'],
       map: {lat: 33.415203, lng: -111.834871},
       tags: [
@@ -204,9 +204,9 @@ export class StoresService {
       hero: './assets/store-images/AOCnt/hero.jpg',
       pics: [
         './assets/store-images/AOCnt/1.jpg',
-        './assets/store-images/AOCnt/2.jpg',
+        './assets/store-images/AOCnt/2.JPG',
         './assets/store-images/AOCnt/3.jpg',
-        './assets/store-images/AOCnt/4.jpg',
+        './assets/store-images/AOCnt/4.JPG',
         './assets/store-images/AOCnt/5.jpg',
         './assets/store-images/AOCnt/6.jpg',
       ],
@@ -239,10 +239,10 @@ export class StoresService {
         './assets/store-images/TC/1.jpg',
         './assets/store-images/TC/2.jpg',
         './assets/store-images/TC/3.jpg',
-        './assets/store-images/TC/4.jpg',
+        './assets/store-images/TC/4.JPG',
         './assets/store-images/TC/5.jpg',
         './assets/store-images/TC/6.jpg',
-        './assets/store-images/TC/7.jpg',
+        './assets/store-images/TC/7.JPG',
       ],
       social: {
         facebook: 'https://www.facebook.com/antiquesoncentral1/'
@@ -269,13 +269,13 @@ export class StoresService {
        and enjoy.<br/>Located within Antiques On Central.<br/>Owner - Paula Banks',
       hero: './assets/store-images/PJSC/hero.jpg',
       pics: [
-        './assets/store-images/PJSC/1.jpg',
-        './assets/store-images/PJSC/2.jpg',
-        './assets/store-images/PJSC/3.jpg',
-        './assets/store-images/PJSC/4.jpg',
-        './assets/store-images/PJSC/5.jpg',
-        './assets/store-images/PJSC/6.jpg',
-        './assets/store-images/PJSC/7.jpg',
+        './assets/store-images/PJSC/1.jpeg',
+        './assets/store-images/PJSC/2.jpeg',
+        './assets/store-images/PJSC/3.jpeg',
+        './assets/store-images/PJSC/4.jpeg',
+        './assets/store-images/PJSC/5.jpeg',
+        './assets/store-images/PJSC/6.jpeg',
+        './assets/store-images/PJSC/7.jpeg',
       ],
       social: {
         facebook: 'https://www.facebook.com/antiquesoncentral1/'
@@ -396,8 +396,8 @@ export class StoresService {
         './assets/store-images/CIN/3.jpg',
         './assets/store-images/CIN/4.jpg',
         './assets/store-images/CIN/5.jpg',
-        './assets/store-images/CIN/6.jpg',
-        './assets/store-images/CIN/7.jpg'
+        './assets/store-images/CIN/6.JPG',
+        './assets/store-images/CIN/7.JPG'
       ],
       social: {
         facebook: 'https://www.facebook.com/CallitNewCallitAntiqueMesa/',
@@ -446,38 +446,6 @@ export class StoresService {
     },
 //////////////////////////////////////////////////////
     {
-      name: 'Sudee\'s Antiques',
-      id: 11,
-      address: [
-        '1509 N. Arizona Ave., Chandler, 85225',
-        '114 W. Main St., Mesa, 85201'
-      ],
-      map: {lat: 33.330828, lng: -111.841001},
-      tags: [
-        'china',
-        'primitives',
-        'glassware',
-        'silver'
-      ],
-      description: 'Antiques to please all collectors including oak & pine, china, primitives, glassware,\
-       silver & etc. Specializing in copper and brass. Established in 1965. Located at Merchants Square\
-        (Booth #3 & #5) and Antique Plaza (Booth #20)',
-      hero: './assets/store-images/SA/hero.jpg',
-      pics: [
-        './assets/store-images/SA/1.jpg',
-      ],
-      social: {
-        facebook: 'https://www.facebook.com/SuDees-Antiques-154653037889853/',
-        twitter: 'https://twitter.com/themerchsquare',
-        instagram: 'https://www.instagram.com/explore/locations/517508099/merchants-square-antiques-and-decor/'
-      },
-      contact: {
-        site: 'http://merchantsquareantiques.com'
-      },
-      region: 'Chandler'
-    },
-//////////////////////////////////////////////////////
-    {
       name: 'Beyond Expression Antiques',
       id: 12,
       address: [
@@ -485,7 +453,7 @@ export class StoresService {
       ],
       map: {lat: 33.451509, lng: -111.748513},
       tags: [
-        'Mall',
+        'Store',
       ],
       description: 'Beyond Expression Antiques was started in Bedford Hills, New York in 1977 by owners Ron and\
        Roberta Hopkins.  They were very successful there, written up in several magazines and the New York \
@@ -552,7 +520,7 @@ export class StoresService {
       map: {lat: 33.414859, lng: -111.835303},
       tags: [
         'Military',
-        'Mall'
+        'Store'
       ],
       description: 'Specializing in militaria and historical antiques. Antiques, collectibles, books, prints,\
        swords, political, sports, tokens, US & foreign coins, medals & stamps.</br></br> George & Ko Notarpole',
@@ -584,7 +552,7 @@ export class StoresService {
       map: {lat: 33.415203, lng: -111.834871},
       tags: [
         'Glass',
-        'Mall'
+        'Store'
       ],
       description: 'Glass stemware matching service, Fostoria, Cambridge, Tiffin, Heisey, etc. Miscellaneous\
        collectibles. Large collection of vintage linens.',
@@ -609,17 +577,15 @@ export class StoresService {
       name: 'Endlich',
       id: 16,
       address: [
-        '120 W. Main St, Mesa, 85201'
+        '???'
       ],
       map: {lat: 33.415203, lng: -111.834871},
       tags: [
-        'Glass'
       ],
-      description: 'Dealing in Elegant Glass and Depression Era Glass, Cambridge, Duncan Miller, Tiffin, Fire\
-       King, Pyrex, Indiana, Federal and more.',
-      hero: './assets/store-images/TGU/hero.jpg',
+      description: '???',
+      hero: 'http://gregmillikan.com/wp-content/uploads/2015/09/man-shrugging-shoulders.jpg',
       pics: [
-        './assets/store-images/TGU/1.jpg',
+        'http://gregmillikan.com/wp-content/uploads/2015/09/man-shrugging-shoulders.jpg',
       ],
       social: {
       },
@@ -633,7 +599,7 @@ export class StoresService {
       name: 'Scott Gram Antiques, Inc.',
       id: 17,
       address: [
-        '120 W. Main St, Mesa, 85201'
+        '???'
       ],
       map: {lat: 33.415203, lng: -111.834871},
       tags: [
@@ -642,9 +608,9 @@ export class StoresService {
       description: 'BUYING the Best art glass; Tiffany, Steuben, French Cameo including Daum Nancy & Galle, \
       English cameo glass including Webb, Stevens & Williams.  High end Victorian art glass, also fine jewelry,\
        sterling silver, bronze, paintings, etc…</br></br>Member ISA (International Society of Appraisers)',
-      hero: './assets/store-images/TGU/hero.jpg',
+      hero: 'http://jaimiefield.com/wp-content/uploads/2013/10/Shrugging-Man.jpg',
       pics: [
-        './assets/store-images/TGU/1.jpg',
+        'http://jaimiefield.com/wp-content/uploads/2013/10/Shrugging-Man.jpg',
       ],
       social: {
       },
@@ -663,7 +629,8 @@ export class StoresService {
       ],
       map: {lat: 33.510193, lng: -112.073444},
       tags: [
-        'Sterling'
+        'Sterling',
+        'Silver'
       ],
       description: 'Specializing in sterling silver flatware and holloware for obsolete, discontinued, as well\
        as current patterns. We have a large inventory for you to select that exact piece from, or maybe we can\
@@ -694,7 +661,7 @@ export class StoresService {
       ],
       map: {lat: 33.507771, lng: -112.082501},
       tags: [
-        'Mall'
+        'Store'
       ],
       description: 'A nice selection of antique art and prints, old books, photography and paper Americana.\
        Vintage Mexican and Native American jewelry, curios, basketry and pottery. An assortment of quality \
@@ -725,7 +692,7 @@ export class StoresService {
       ],
       map: {lat: 33.494603, lng: -112.033410},
       tags: [
-        'Mall'
+        'Store'
       ],
       description: 'Lamps – Shades – Lamp  & Shade Repairs - Antiques. Over 6,000 shades in stock. Custom lamp\
        making – antique lamp restoration – rewiring. Largest selection of shades in the country.',
@@ -773,6 +740,163 @@ export class StoresService {
         phone: '602-956-8203',
       },
       region: 'Phoenix'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Appraisals By Bradbury Inc.',
+      id: 22,
+      address: [
+        '7001 N. Scottsdale Rd #143, Scottsdale, 85253'
+      ],
+      map: {lat: 33.539505, lng: -111.924363},
+      tags: [
+        'Service',
+        'Appraisal'
+      ],
+      description: 'Appraisals for all purposes; Probate, estate, trusts, antiques, insurance,\
+       collections, divorce, inventories, offices & household furnishings, moving, storage services, \
+       damage, remodel/demolitions, tools & shop equipment. Barbara June Bradbury ASA, ISA',
+      hero: './assets/store-images/BAA/hero.jpg',
+      pics: [
+        './assets/store-images/BAA/hero.jpg',
+      ],
+      social: {
+      },
+      contact: {
+        site: 'http://www.ethicalaz.com/bradburysappraisalsinc',
+        phone: '480-947-2378',
+      },
+      region: 'Phoenix'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Family Heritage Estate Sales',
+      id: 23,
+      address: [
+        '???'
+      ],
+      map: {lat: 33.539505, lng: -111.924363},
+      tags: [
+        'Service',
+        'Appraisal'
+      ],
+      description: '???',
+      hero: 'http://1gw2vk209dcz2vvkvqvdfma1.wpengine.netdna-cdn.com/wp-content/uploads/2015/05/shrugging-guy.jpg',
+      pics: [
+        'http://1gw2vk209dcz2vvkvqvdfma1.wpengine.netdna-cdn.com/wp-content/uploads/2015/05/shrugging-guy.jpg',
+      ],
+      social: {
+      },
+      contact: {
+        site: 'http://www.ethicalaz.com/bradburysappraisalsinc',
+        phone: '602-253-7253',
+      },
+      region: 'Phoenix'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Stuff Antiques l.l.c.',
+      id: 24,
+      address: [
+        '4206 N. Central Ave, Phoenix, 85012'
+      ],
+      map: {lat: 33.539505, lng: -111.924363},
+      tags: [
+        'Store',
+        'Appraisal'
+      ],
+      description: 'Unbelievable collection of authentic quality pieces. Specializing (since 1967)\
+       in Antique lighting fixtures of all types, including table lamps, hanging fixtures, floor\
+        lamps, and wall sconces (indoor and outdoor), stained and beveled glass windows and doors,\
+         furniture, chairs, stack bookcases, display cases and stainless steel and metal cabinets.\
+          Slot machines, gumball machines, iron beds, and advertising items. Preservation,\
+           restoration and repair services available. Always buying quality antique lamps, fixtures\
+            and the Unusual. <br /><br />Joe D. & Jyoti Weaver',
+      hero: './assets/store-images/StA/hero.jpg',
+      pics: [
+        './assets/store-images/StA/hero.jpg',
+      ],
+      social: {
+      },
+      contact: {
+        phone: '602-266-1967',
+      },
+      region: 'Phoenix'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Matlosz Antiques & Co.',
+      id: 25,
+      address: [
+        '2227 N. 24 St, Phoenix, 85008'
+      ],
+      map: {lat: 33.472682, lng: -112.029879},
+      tags: [
+        'Store',
+        'Service'
+      ],
+      description: 'The finest European and American interiors. Twenty five years in business. Old\
+       World craftsmanship, repair, restoration and refinishing services. We offer consignment,\
+        pickup and delivery.',
+      hero: './assets/store-images/Mat/hero.jpg',
+      pics: [
+        './assets/store-images/Mat/1.jpg',
+        './assets/store-images/Mat/2.jpg',
+        './assets/store-images/Mat/3.jpg',
+        './assets/store-images/Mat/4.jpg',
+        './assets/store-images/Mat/5.jpg',
+      ],
+      social: {
+      },
+      contact: {
+        site: 'http://matloszantiques.com/',
+        email: 'wesleymatlosz@yahoo.com',
+        phone: '602-273-7974',
+      },
+      region: 'Phoenix'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Michelle\'s Antiques',
+      id: 26,
+      address: [
+        '10 N Macdonald, Mesa, 85201'
+      ],
+      map: {lat: 33.415493, lng: -111.834368},
+      tags: [
+        'Store',
+        'Service',
+        'Vintage'
+      ],
+      description: 'When it comes to antique home decor Everyone has different tastes and budgets.\
+       With the proper help, you can easily stay within your small or large budget, and get that\
+        high style that you desire for your home. Michelle’s Antiques and Vintage Marketplace,\
+         located in the charming downtown Mesa AZ, has all the tools and knowledge to aid you in\
+          your decorating pursuits. We have a wide array of styles, textures, sizes, colors, and\
+           designs to fit with any style of room. <br /><br />At Michelle’s Antiques and Vintage Marketplace,\
+            we take pride in the variety and uniqueness of our antique pieces displayed in our 2,000\
+             square foot shop, six rooms filled with curated vintage and antique wares.<br /><br />Are you\
+              searching for that big centerpiece, or unique style for you little girls bedroom?\
+               Perhaps you’re looking for a chic vintage table providing the perfect space for\
+                entertaining guests or an Antique to add to your collection? You will not be\
+                 disappointed with our unique stock, so come visit us to find your perfect antique decor!',
+      hero: './assets/store-images/MA/hero.jpg',
+      pics: [
+        './assets/store-images/MA/1.jpg',
+        './assets/store-images/MA/2.jpg',
+        './assets/store-images/MA/3.jpg',
+        './assets/store-images/MA/4.jpg',
+      ],
+      social: {
+        facebook: 'https://www.facebook.com/michellesantiquesmesa/',
+        instagram: 'https://www.instagram.com/michellesantiques/',
+        twitter: 'https://twitter.com/antiquesmesaaz'
+      },
+      contact: {
+        site: 'http://www.michellesantiques.org',
+        phone: '602-284-9064',
+      },
+      region: 'Mesa'
     },
 //////////////////////////////////////////////////////
   ];

@@ -72,9 +72,9 @@
 </div>
 <hr>
 <div>
-  <h4>Other stores in this region:</h4>
+  <h4>Other dealers in this region:</h4>
   <ul>
-    <li *ngFor="let close of stores | storeFilter : '' : store.region: false">
+    <li *ngFor="let close of stores | regionFilter:store.region:store.name">
       <a [routerLink]="['/store', close.id]">  
         {{close.name}}
       </a>
