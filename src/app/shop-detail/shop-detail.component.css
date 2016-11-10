@@ -1,6 +1,7 @@
 .sebm-google-map-container {
   height: 300px;
   width: 100%;
+  cursor: pointer;
 }
 
 .back-button {

@@ -4,7 +4,7 @@ import { Injectable, EventEmitter, Output } from '@angular/core';
 export class StoresService {
   stores: Array<any>;
   store: any;
-  query: string = 'none';
+  query: string = '';
   @Output() queryUpdated = new EventEmitter();
 
   getStores() {
@@ -583,7 +583,7 @@ export class StoresService {
       ],
       map: {lat: 33.415203, lng: -111.834871},
       tags: [
-        'Military',
+        'Glass',
         'Mall'
       ],
       description: 'Glass stemware matching service, Fostoria, Cambridge, Tiffin, Heisey, etc. Miscellaneous\
@@ -741,6 +741,36 @@ export class StoresService {
       contact: {
         site: 'http://www.phoenixlampandshade.com/',
         phone: '602-955-5640',
+      },
+      region: 'Phoenix'
+    },
+//////////////////////////////////////////////////////
+    {
+      name: 'Antique Gatherings',
+      id: 21,
+      address: [
+        '3601 E Indian School Rd, Phoenix, 85018'
+      ],
+      map: {lat: 33.494714, lng: -112.003802},
+      tags: [
+        'Mall'
+      ],
+      description: 'Under new ownership of Amanda Wilson, Amanda Wilson Antiques. over 18,000 sq ft of\
+       beautyful antiques, decorative accessories, art, rugs, and many unusual and one of a kind items!',
+      hero: './assets/store-images/AG/hero.jpg',
+      pics: [
+        './assets/store-images/AG/1.jpg',
+        './assets/store-images/AG/2.jpg',
+        './assets/store-images/AG/3.jpg',
+        './assets/store-images/AG/4.jpg',
+      ],
+      social: {
+        facebook: 'https://www.facebook.com/AntiqueGatherings/',
+        instagram: 'https://www.instagram.com/antiquegatherings/'
+      },
+      contact: {
+        site: 'http://www.antiquegatherings.com/',
+        phone: '602-956-8203',
       },
       region: 'Phoenix'
     },

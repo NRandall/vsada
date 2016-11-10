@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs/Rx';
   templateUrl: './shop-detail.component.html',
   styleUrls: ['./shop-detail.component.css'],
 })
-export class ShopDetailComponent implements OnDestroy{
+export class ShopDetailComponent implements OnDestroy {
   private subscription: Subscription;
   zoom: number = 12;
   id: number;
@@ -21,6 +21,10 @@ export class ShopDetailComponent implements OnDestroy{
         };
   store: any;
   stores: Array<any>;
+
+  getMap(address: string) {
+    window.location.href = 'http://maps.google.com/?q=' + address;
+  }
 
   constructor(private storesService: StoresService, private activatedRoute: ActivatedRoute) {
     this.stores = this.storesService.getStores();

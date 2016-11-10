@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" [routerLink]="['/']">VSADA</a>
+      <a class="navbar-brand" [routerLink]="['/']">HOME</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -27,13 +27,9 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Keywords <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a [routerLink]="['/tag', 'midCenturyModern']">Mid-Century Modern</a></li>
-            <li><a [routerLink]="['/tag', 'Furniture']">Furniture</a></li>
-            <li><a [routerLink]="['/tag', 'Retro']">Retro</a></li>
-            <li><a [routerLink]="['/tag', 'Danish']">Danish</a></li>
-            <li><a [routerLink]="['/tag', 'Jewelry']">Jewelry</a></li>
-            <li><a [routerLink]="['/tag', 'Primitive']">Primitive</a></li>
-            <li><a [routerLink]="['/tag', 'Mall']">Mall</a></li>
+            <li *ngFor="let tag of terms">
+              <a [routerLink]="['/tag', tag]">{{tag | uppercase}}</a>
+            </li>
           </ul>
         </li>
         <li><a [routerLink]="['/map']">Map</a></li>

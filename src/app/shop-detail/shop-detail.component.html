@@ -48,7 +48,8 @@
     [longitude]="store.map.lng" 
     [zoom]="zoom" 
     [scrollwheel]="false" 
-    [mapDraggable]="false">
+    [mapDraggable]="false"
+    (mapClick)="getMap(store.address[0])">
     <sebm-google-map-marker
     [latitude]="store.map.lat" 
     [longitude]="store.map.lng">
@@ -73,7 +74,7 @@
 <div>
   <h4>Other stores in this region:</h4>
   <ul>
-    <li *ngFor="let close of stores | storeFilter : 'none' : store.region: false">
+    <li *ngFor="let close of stores | storeFilter : '' : store.region: false">
       <a [routerLink]="['/store', close.id]">  
         {{close.name}}
       </a>
