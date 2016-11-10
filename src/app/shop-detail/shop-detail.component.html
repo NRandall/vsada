@@ -69,5 +69,16 @@
   </a>
 </div>   
 </div>
+<hr>
+<div>
+  <h4>Other stores in this region:</h4>
+  <ul>
+    <li *ngFor="let close of stores | storeFilter : 'none' : store.region: false">
+      <a [routerLink]="['/store', close.id]">  
+        {{close.name}}
+      </a>
+    </li>
+  </ul>
+</div>
 <div class="footer"></div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { StoresService } from '../stores.service';
 
 @Component({
@@ -10,7 +10,6 @@ export class NavbarComponent implements OnInit {
 
   searchBy(query: string) {
     this.storesService.setQuery(query);
-    console.log(this.storesService.getQuery());
   }
 
   constructor(private storesService: StoresService) {}

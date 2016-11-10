@@ -1,8 +1,7 @@
-<div class="row"> 
+<div class="row" (input)="0"> 
   <div 
   *ngFor="let store of stores | storeFilter : term : region: tag" 
   class="col-sm-6 col-md-4"
-  (input)="0"
   >
     <a [routerLink]="['/store', store.id]">
       <div class="thumbnail card">

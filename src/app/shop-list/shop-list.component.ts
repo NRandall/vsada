@@ -10,6 +10,7 @@ import { Subscription } from 'rxjs/Rx';
 })
 export class ShopListComponent implements OnDestroy {
   private subscription: Subscription;
+  private searchTerm: Subscription;
   stores: Array<any>;
   term = this.storesService.getQuery();
   region: any;
@@ -26,12 +27,15 @@ export class ShopListComponent implements OnDestroy {
       (param: any) => {
         this.region = param['region'] || false;
         this.tag = param['tag'] || false;
-        console.log(this.tag, this.region);
       }
+    );
+    this.searchTerm = this.storesService.queryUpdated.subscribe(
+      (updatedTerm: any) => this.term = updatedTerm
     );
   }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
+    this.searchTerm.unsubscribe();
   }
 }

@@ -20,8 +20,10 @@ export class ShopDetailComponent implements OnDestroy{
             spaceBetween: 30
         };
   store: any;
+  stores: Array<any>;
 
   constructor(private storesService: StoresService, private activatedRoute: ActivatedRoute) {
+    this.stores = this.storesService.getStores();
     this.subscription = activatedRoute.params.subscribe(
       (param: any) => {
         this.id = +param['id'];

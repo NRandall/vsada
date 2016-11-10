@@ -5,8 +5,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class StoreFilterPipe implements PipeTransform {
 
-  transform(value, [term, tag, region]) {
-    return value.filter((item) => term ? item.name.includes(term) : tag ? item.tags.includes(tag) : region ? item.region.toLowerCase() === region : true);
+  transform(value, term, region, tag) {
+    return value.filter((item) => {
+      return term !== 'none' ? item.name.toLowerCase().includes(term.toLowerCase()) : tag ? item.tags.includes(tag) : region ? item.region.toLowerCase() === region.toLowerCase() : true;
+    }); 
   }
 
 }

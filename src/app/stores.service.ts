@@ -1,10 +1,11 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter, Output } from '@angular/core';
 
 @Injectable()
 export class StoresService {
   stores: Array<any>;
   store: any;
-  query: string = '';
+  query: string = 'none';
+  @Output() queryUpdated = new EventEmitter();
 
   getStores() {
     return this.stores;
@@ -22,6 +23,7 @@ export class StoresService {
 
   setQuery(query: string) {
     this.query = query;
+    this.queryUpdated.emit(this.query);
   }
 
   getQuery() {
@@ -31,46 +33,44 @@ export class StoresService {
   constructor() {
 
   this.stores = [
-    // {
-    //   name: 'PAST Vintage',
-    //   address: ['120 W. Main, Mesa, 85201'],
-    //   map: {lat: 33.415203, lng: -111.834871},
-    //   tags: [
-    //     'Mid-Century Modern',
-    //     'Furniture',
-    //     'Retro',
-    //     'Danish'
-    //   ],
-    //   description: 'Who says you can’t live in the past? Meet PAST: the brainchild of four co-owners who merged their\
-    //    backgrounds in graphic design, photography, journalism and business management to create the vintage furniture\
-    //     and home decor shop they always dreamed of. Our aim is to not only show you how to incorporate vintage styles\
-    //      into your home, but also make it affordable to do so. Our team’s relentless quest to find the finest pieces\
-    //       from the past ensures you’ll have the most beautiful present.',
-    //   hero: 'http://24rcle3xxiqq3u6gz62gczyh.wpengine.netdna-cdn.com/wp-content/uploads/past-vinta.jpg',
-    //   pics: [
-    //     'https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/11953144_1652765258271494_7433514891133886577_n\
-    //     .jpg?oh=63885ec909ccab6c2ee4b498d0aa7a96&oe=583BDE54',
-    //     'https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/13962525_1755467308001288_2028628013531203059_n\
-    //     .jpg?oh=1f3d2f407bc9e5f6313d6a3351dbc55b&oe=5878C1E9',
-    //     'https://scontent.fphx1-2.fna.fbcdn.net/t31.0-8/12138474_1662118714002815_4936162802093071243_o.jpg',
-    //     'https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/11041191_1647655358782484_7884207339641999001_n\
-    //     .jpg?oh=eff365fda8c5f84a78e06cf3c59d630d&oe=587FBD6C'
-    //   ],
-    //   social: {
-    //     instagram: 'http://instagram.com/pastvintage',
-    //     facebook: 'http://facebook.com/pastvintageshop'
-    //   },
-    //   contact: {
-    //     email: 'pastvintage@gmail.com'
-    //   },
-    //   region: 'Mesa'
-    // },
+    {
+      name: 'PAST Vintage',
+      id: 23,
+      address: ['120 W. Main, Mesa, 85201'],
+      map: {lat: 33.415203, lng: -111.834871},
+      tags: [
+        'Mid-Century Modern',
+        'Furniture',
+        'Retro',
+        'Danish'
+      ],
+      description: 'Who says you can’t live in the past? Meet PAST: the brainchild of four co-owners who merged their\
+       backgrounds in graphic design, photography, journalism and business management to create the vintage furniture\
+        and home decor shop they always dreamed of. Our aim is to not only show you how to incorporate vintage styles\
+         into your home, but also make it affordable to do so. Our team’s relentless quest to find the finest pieces\
+          from the past ensures you’ll have the most beautiful present.',
+      hero: 'http://24rcle3xxiqq3u6gz62gczyh.wpengine.netdna-cdn.com/wp-content/uploads/past-vinta.jpg',
+      pics: [
+        'https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/11953144_1652765258271494_7433514891133886577_n.jpg?oh=63885ec909ccab6c2ee4b498d0aa7a96&oe=583BDE54',
+        'https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/13962525_1755467308001288_2028628013531203059_n.jpg?oh=1f3d2f407bc9e5f6313d6a3351dbc55b&oe=5878C1E9',
+        'https://scontent.fphx1-2.fna.fbcdn.net/t31.0-8/12138474_1662118714002815_4936162802093071243_o.jpg',
+        'https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/11041191_1647655358782484_7884207339641999001_n.jpg?oh=eff365fda8c5f84a78e06cf3c59d630d&oe=587FBD6C'
+      ],
+      social: {
+        instagram: 'http://instagram.com/pastvintage',
+        facebook: 'http://facebook.com/pastvintageshop'
+      },
+      contact: {
+        email: 'pastvintage@gmail.com'
+      },
+      region: 'Mesa'
+    },
 //////////////////////////////////////////////////////
     {
       name: 'ANTIQUES ON CAMELBACK, L.L.C.',
       id: 1,
       address: [
-        '3601 <small>E. Indian School Rd</small>, Phoenix, 85018',
+        '3601 E. Indian School Rd, Phoenix, 85018',
         '835 E. Camelback Rd, Phoenix, 85014',
         '2020 N. Scottsdale Rd, Scottsdale, 85257'
       ],
@@ -556,7 +556,7 @@ export class StoresService {
       ],
       description: 'Specializing in militaria and historical antiques. Antiques, collectibles, books, prints,\
        swords, political, sports, tokens, US & foreign coins, medals & stamps.</br></br> George & Ko Notarpole',
-      hero: './assets/store-images/HBG/hero.jpg',
+      hero: './assets/store-images/HBG/hero.JPG',
       pics: [
         './assets/store-images/HBG/1.jpg',
         './assets/store-images/HBG/2.jpg',
