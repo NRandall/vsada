@@ -634,8 +634,8 @@ export class StoresService {
       ],
       description: 'Specializing in sterling silver flatware and holloware for obsolete, discontinued, as well\
        as current patterns. We have a large inventory for you to select that exact piece from, or maybe we can\
-        conduct a search from our nationwide network. By appointment only at Antiques on Central, 5037 N.\
-         Central Avenue, Phoenix, AZ 85012</br></br>Nyla, & Jerry Kacer',
+        conduct a search from our nationwide network. By appointment only at Antiques on Central, 730 E\
+         Missouri Ave, Phoenix, 85014.<br /><br />Nyla, & Jerry Kacer',
       hero: './assets/store-images/KE/hero.jpg',
       pics: [
         './assets/store-images/KE/1.jpg',
