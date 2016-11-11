@@ -22,8 +22,8 @@
   padding-bottom: 17px;
   text-overflow: ellipsis;
   display: -webkit-box;
-  line-height: 14px; 
-  max-height: 14px; 
+  line-height: 17px; 
+  max-height: 17px; 
   -webkit-line-clamp: 1; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
