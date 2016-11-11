@@ -70,11 +70,11 @@ export class StoresService {
       name: 'ANTIQUES ON CAMELBACK, L.L.C.',
       id: 1,
       address: [
-        '3601 E. Indian School Rd, Phoenix, 85018',
         '835 E. Camelback Rd, Phoenix, 85014',
+        '3601 E. Indian School Rd, Phoenix, 85018',
         '2020 N. Scottsdale Rd, Scottsdale, 85257'
       ],
-      map: {lat: 33.494714, lng: -112.003802},
+      map: {lat: 33.509050, lng: -112.062416},
       tags: [
       ],
       description: 'Longtime dealer and mall owner Stace Robbins has been in the antiques field since settling in\
@@ -94,7 +94,7 @@ export class StoresService {
 
       },
       contact: {
-        email: 'stace@staceplace.com'
+        email: 'stace@stacesplace.com'
       },
       region: 'Phoenix'
     },

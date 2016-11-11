@@ -19,6 +19,7 @@
 
 .store-name {
   overflow: hidden;
+  padding-bottom: 17px;
   text-overflow: ellipsis;
   display: -webkit-box;
   line-height: 14px; 
