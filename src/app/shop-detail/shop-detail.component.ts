@@ -17,7 +17,9 @@ export class ShopDetailComponent implements OnDestroy {
             paginationClickable: true,
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
-            spaceBetween: 30
+            spaceBetween: 30,
+            loop: true,
+            //loopedSlides: 'auto'
         };
   store: any;
   stores: Array<any>;

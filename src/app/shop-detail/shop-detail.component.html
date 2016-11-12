@@ -7,7 +7,15 @@
     <i class="fa fa-chevron-circle-left fa-4x" aria-hidden="true"></i>
   </a>
 
-  <swiper class="gallery" [config]="config">
+  <swiper class="gallery" [config]="{
+      'pagination': '.swiper-pagination',
+      'paginationClickable': true,
+      'nextButton': '.swiper-button-next',
+      'prevButton': '.swiper-button-prev',
+      'spaceBetween': 30,
+      'preloadImages': false,
+      'lazyLoading': true
+    }">
     <div class="swiper-wrapper">
       <img class="swiper-slide" [src]="store.hero">
       <img class="swiper-slide" *ngFor="let pic of store.pics" [src]="pic">
@@ -73,7 +81,7 @@
 <hr>
 <div>
   <h4>Other dealers in this region:</h4>
-  <ul>
+  <ul class="store-list">
     <li *ngFor="let close of stores | regionFilter:store.region:store.name">
       <a [routerLink]="['/store', close.id]">  
         {{close.name}}
