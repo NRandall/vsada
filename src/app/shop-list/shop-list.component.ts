@@ -15,6 +15,11 @@ export class ShopListComponent implements OnDestroy {
   term = this.storesService.getQuery();
   region: any;
   tag: any;
+  filter: any;
+
+  clearSearch() {
+    this.storesService.setQuery('');
+  }
 
   constructor(private storesService: StoresService, private activatedRoute: ActivatedRoute) {
     this.stores = this.storesService.getStores()
@@ -27,10 +32,14 @@ export class ShopListComponent implements OnDestroy {
       (param: any) => {
         this.region = param['region'] || false;
         this.tag = param['tag'] || false;
+        this.filter = this.term || this.region || this.tag || false;
       }
     );
     this.searchTerm = this.storesService.queryUpdated.subscribe(
-      (updatedTerm: any) => this.term = updatedTerm
+      (updatedTerm: any) => {
+        this.term = updatedTerm;
+        this.filter = this.term;
+      }
     );
   }
 

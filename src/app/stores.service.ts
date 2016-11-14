@@ -354,12 +354,12 @@ export class StoresService {
         './assets/store-images/AP/a6.jpg',
         './assets/store-images/AP/a7.jpg',
         './assets/store-images/AP/a8.jpg',
-        './assets/store-images/AP/a9.jpg',
-        './assets/store-images/AP/a10.jpg',
-        './assets/store-images/AP/a11.jpg',
-        './assets/store-images/AP/a12.jpg',
-        './assets/store-images/AP/a13.jpg',
-        './assets/store-images/AP/a14.jpg',
+        // './assets/store-images/AP/a9.jpg',
+        // './assets/store-images/AP/a10.jpg',
+        // './assets/store-images/AP/a11.jpg',
+        // './assets/store-images/AP/a12.jpg',
+        // './assets/store-images/AP/a13.jpg',
+        // './assets/store-images/AP/a14.jpg',
         './assets/store-images/AP/a15.jpg',
         './assets/store-images/AP/a16.jpg',
         './assets/store-images/AP/a17.jpg',
@@ -588,53 +588,55 @@ export class StoresService {
       region: 'Mesa'
     },
 //////////////////////////////////////////////////////
-    {
-      name: 'Endlich',
-      id: 16,
-      address: [
-        '???'
-      ],
-      map: {lat: 33.415203, lng: -111.834871},
-      tags: [
-      ],
-      description: '???',
-      hero: 'http://gregmillikan.com/wp-content/uploads/2015/09/man-shrugging-shoulders.jpg',
-      pics: [
-        'http://gregmillikan.com/wp-content/uploads/2015/09/man-shrugging-shoulders.jpg',
-      ],
-      social: {
-      },
-      contact: {
-        phone: '602-840-1347',
-      },
-      region: 'Phoenix'
-    },
+    // @todo
+    // {
+    //   name: 'Endlich',
+    //   id: 16,
+    //   address: [
+    //     '???'
+    //   ],
+    //   map: {lat: 33.415203, lng: -111.834871},
+    //   tags: [
+    //   ],
+    //   description: '???',
+    //   hero: 'http://gregmillikan.com/wp-content/uploads/2015/09/man-shrugging-shoulders.jpg',
+    //   pics: [
+    //     'http://gregmillikan.com/wp-content/uploads/2015/09/man-shrugging-shoulders.jpg',
+    //   ],
+    //   social: {
+    //   },
+    //   contact: {
+    //     phone: '602-840-1347',
+    //   },
+    //   region: 'Phoenix'
+    // },
 //////////////////////////////////////////////////////
-    {
-      name: 'Scott Gram Antiques, Inc.',
-      id: 17,
-      address: [
-        '???'
-      ],
-      map: {lat: 33.415203, lng: -111.834871},
-      tags: [
-        'Glass'
-      ],
-      description: 'BUYING the Best art glass; Tiffany, Steuben, French Cameo including Daum Nancy & Galle, \
-      English cameo glass including Webb, Stevens & Williams.  High end Victorian art glass, also fine jewelry,\
-       sterling silver, bronze, paintings, etc…</br></br>Member ISA (International Society of Appraisers)',
-      hero: 'http://jaimiefield.com/wp-content/uploads/2013/10/Shrugging-Man.jpg',
-      pics: [
-        'http://jaimiefield.com/wp-content/uploads/2013/10/Shrugging-Man.jpg',
-      ],
-      social: {
-      },
-      contact: {
-        phone: '602-705-2503',
-        email: 'sdgram@cox.net'
-      },
-      region: 'Phoenix'
-    },
+    // @todo
+    // {
+    //   name: 'Scott Gram Antiques, Inc.',
+    //   id: 17,
+    //   address: [
+    //     '???'
+    //   ],
+    //   map: {lat: 33.415203, lng: -111.834871},
+    //   tags: [
+    //     'Glass'
+    //   ],
+    //   description: 'BUYING the Best art glass; Tiffany, Steuben, French Cameo including Daum Nancy & Galle, \
+    //   English cameo glass including Webb, Stevens & Williams.  High end Victorian art glass, also fine jewelry,\
+    //    sterling silver, bronze, paintings, etc…</br></br>Member ISA (International Society of Appraisers)',
+    //   hero: 'http://jaimiefield.com/wp-content/uploads/2013/10/Shrugging-Man.jpg',
+    //   pics: [
+    //     'http://jaimiefield.com/wp-content/uploads/2013/10/Shrugging-Man.jpg',
+    //   ],
+    //   social: {
+    //   },
+    //   contact: {
+    //     phone: '602-705-2503',
+    //     email: 'sdgram@cox.net'
+    //   },
+    //   region: 'Phoenix'
+    // },
 //////////////////////////////////////////////////////
     {
       name: 'Kacer Enterprises',
@@ -784,29 +786,30 @@ export class StoresService {
       region: 'Phoenix'
     },
 //////////////////////////////////////////////////////
-    {
-      name: 'Family Heritage Estate Sales',
-      id: 23,
-      address: [
-        '???'
-      ],
-      map: {lat: 33.539505, lng: -111.924363},
-      tags: [
-        'Service',
-        'Appraisal'
-      ],
-      description: '???',
-      hero: 'http://1gw2vk209dcz2vvkvqvdfma1.wpengine.netdna-cdn.com/wp-content/uploads/2015/05/shrugging-guy.jpg',
-      pics: [
-        'http://1gw2vk209dcz2vvkvqvdfma1.wpengine.netdna-cdn.com/wp-content/uploads/2015/05/shrugging-guy.jpg',
-      ],
-      social: {
-      },
-      contact: {
-        phone: '602-253-7253',
-      },
-      region: 'Phoenix'
-    },
+    // @todo
+    // {
+    //   name: 'Family Heritage Estate Sales',
+    //   id: 23,
+    //   address: [
+    //     '???'
+    //   ],
+    //   map: {lat: 33.539505, lng: -111.924363},
+    //   tags: [
+    //     'Service',
+    //     'Appraisal'
+    //   ],
+    //   description: '???',
+    //   hero: 'http://1gw2vk209dcz2vvkvqvdfma1.wpengine.netdna-cdn.com/wp-content/uploads/2015/05/shrugging-guy.jpg',
+    //   pics: [
+    //     'http://1gw2vk209dcz2vvkvqvdfma1.wpengine.netdna-cdn.com/wp-content/uploads/2015/05/shrugging-guy.jpg',
+    //   ],
+    //   social: {
+    //   },
+    //   contact: {
+    //     phone: '602-253-7253',
+    //   },
+    //   region: 'Phoenix'
+    // },
 //////////////////////////////////////////////////////
     {
       name: 'Stuff Antiques l.l.c.',

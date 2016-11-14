@@ -1,5 +1,6 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Renderer } from '@angular/core';
 import { StoresService } from '../stores.service';
+import { Subscription } from 'rxjs/Rx';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +8,7 @@ import { StoresService } from '../stores.service';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
+  private searchTerm: Subscription;
   terms: Array<any> = [
     'Mid-Century Modern',
     'Furniture',
@@ -31,11 +33,13 @@ export class NavbarComponent implements OnInit {
     'Service'
   ];
 
+  term: string = '';
   searchBy(query: string) {
     this.storesService.setQuery(query);
+    this.term = query;
   }
 
-  constructor(private storesService: StoresService) {
+  constructor(private storesService: StoresService, private renderer: Renderer) {
     // for (let store of storesService.getStores()){
     //   if (store.tags.length > 0) {
     //     for (let tag of store.tags) {
@@ -46,6 +50,11 @@ export class NavbarComponent implements OnInit {
     //     }
     //   }
     // }
+    this.searchTerm = this.storesService.queryUpdated.subscribe(
+      (updatedTerm: any) => {
+        if (updatedTerm === '') { this.term = ''; };
+      }
+    );
   }
 
   ngOnInit() {}

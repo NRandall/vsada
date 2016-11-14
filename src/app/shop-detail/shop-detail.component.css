@@ -51,7 +51,7 @@
 .social {
   float: left;
   position: static;
-  bottom: 300px;
+/*  bottom: 300px;*/
   left: 95%;
   width: 100%;
   margin: auto;
@@ -91,7 +91,7 @@
     bottom: 300px;
     left: 95%;
     height: 300px;
-    max-width: 50px;
+    max-width: 68px;
     margin: auto;
     text-align: center;
   }

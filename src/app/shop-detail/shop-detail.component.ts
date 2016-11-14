@@ -12,15 +12,6 @@ export class ShopDetailComponent implements OnDestroy {
   private subscription: Subscription;
   zoom: number = 12;
   id: number;
-  config: Object = {
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            spaceBetween: 30,
-            loop: true,
-            //loopedSlides: 'auto'
-        };
   store: any;
   stores: Array<any>;
 

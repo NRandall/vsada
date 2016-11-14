@@ -2,42 +2,40 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" #collapse>
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" [routerLink]="['/']">HOME</a>
+      <a class="navbar-brand" (click)="collapse.classList.contains('collapsed') || collapse.click()" [routerLink]="['/']">HOME</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li> -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Regions <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a [routerLink]="['/region', 'phoenix']">Phoenix</a></li>
-            <li><a [routerLink]="['/region', 'mesa']">Mesa</a></li>
-            <li><a [routerLink]="['/region', 'chandler']">Chandler</a></li>
+            <li><a (click)="collapse.classList.contains('collapsed') || collapse.click()" [routerLink]="['/region', 'phoenix']">Phoenix</a></li>
+            <li><a (click)="collapse.classList.contains('collapsed') || collapse.click()" [routerLink]="['/region', 'mesa']">Mesa</a></li>
+            <li><a (click)="collapse.classList.contains('collapsed') || collapse.click()" [routerLink]="['/region', 'chandler']">Chandler</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Keywords <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li *ngFor="let tag of terms">
-              <a [routerLink]="['/tag', tag]">{{tag | uppercase}}</a>
+              <a (click)="collapse.classList.contains('collapsed') || collapse.click()" [routerLink]="['/tag', tag]">{{tag | uppercase}}</a>
             </li>
           </ul>
         </li>
-        <li><a [routerLink]="['/map']">Map</a></li>
-        <li><a [routerLink]="['/tag/Service']">Services</a></li>
+        <li><a (click)="collapse.classList.contains('collapsed') || collapse.click()" [routerLink]="['/map']">Map</a></li>
+        <li><a (click)="collapse.classList.contains('collapsed') || collapse.click()" [routerLink]="['/tag/Service']">Services</a></li>
       </ul>
       <form class="navbar-form navbar-left">
         <div class="form-group">
-          <input (input)="searchBy(searchField.value)" #searchField type="text" class="form-control" placeholder="Search">
+          <input (input)="searchBy(searchField.value)" #searchField [value]="term" type="text" class="form-control" placeholder="Search">
         </div>
       </form>
     </div><!-- /.navbar-collapse -->
