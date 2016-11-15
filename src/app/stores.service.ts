@@ -82,7 +82,7 @@ export class StoresService {
         decorating your home, business, and garden.  Incorporate your own special heirlooms in addition to selecting\
          from our inventory and those items we locate for you.  We also help with set dressing for film and theater.\
           <br/>Estate dispersal consultations, sales, and buy-outs. Your concierge for all things vintage!',
-      hero: './assets/store-images/AOC/hero.jpg',
+      hero: './assets/store-images/AOC/hero-f.jpg',
       pics: [
         './assets/store-images/AOC/1.jpg',
         './assets/store-images/AOC/2.jpg',
@@ -128,7 +128,7 @@ export class StoresService {
                   a year with as many as 110 vendors.<br/><br/>Other multi-vendor antique stores in the area, so plan to make\
                    a day in East Mesa.<br/><br/>Join our email list or follow us on Facebook or Twitter to be the first to see\
                     what new merchandise has arrived and events that are taking place at Main Street Antique Mall.',
-      hero: './assets/store-images/MSAM/hero.jpg',
+      hero: './assets/store-images/MSAM/hero-f.jpg',
       pics: [
         './assets/store-images/MSAM/10.jpg',
         './assets/store-images/MSAM/9.jpg',
@@ -163,7 +163,7 @@ export class StoresService {
       description: 'Antiques, fine art, traditional furniture, distinctive gifts and decorative objects.\
        <br/>My emphasis is on fine porcelain. Antiguedades, arte, muebles y regalos de distincion.<br/>Owner:\
         Harriet von Merck Palmer<br/>Located within Antiques On Central',
-      hero: './assets/store-images/NN/hero.jpg',
+      hero: './assets/store-images/NN/hero-f.jpg',
       pics: [
         './assets/store-images/NN/1.jpg',
         './assets/store-images/NN/2.jpg',
@@ -201,7 +201,7 @@ export class StoresService {
             current events, our favorite referrals, and individual items that our dealers offer. If you would\
              like to be notified via email of these events, please contact the store or fill out the simple form\
               on our website.<br/>Partners:<br/>Cliff Sharar<br/>Doris Leis<br/>Sylvia Wells',
-      hero: './assets/store-images/AOCnt/hero.jpg',
+      hero: './assets/store-images/AOCnt/hero-f.jpg',
       pics: [
         './assets/store-images/AOCnt/1.jpg',
         './assets/store-images/AOCnt/2.JPG',
@@ -234,7 +234,7 @@ export class StoresService {
         fine china, cut glass, crystal stemware, silver, and Asian art. There are many unusual gift items\
         and home accessories. I am always buying quality merchandise. <br/>THE COLLECTION WITHIN ANTIQUES\
         ON CENTRAL.<br/>Owner - Dorothy Flood',
-      hero: './assets/store-images/TC/hero.jpg',
+      hero: './assets/store-images/TC/hero-f.jpg',
       pics: [
         './assets/store-images/TC/1.jpg',
         './assets/store-images/TC/2.jpg',
@@ -267,7 +267,7 @@ export class StoresService {
       description: 'Quilts, fine estate jewelry, sterling, china and pottery, as well as many other interesting\
        and charming items. Shop with the Snoop Sister for items that you or someone you love will treasure, use,\
        and enjoy.<br/>Located within Antiques On Central.<br/>Owner - Paula Banks',
-      hero: './assets/store-images/PJSC/hero.jpg',
+      hero: './assets/store-images/PJSC/hero-f.jpg',
       pics: [
         './assets/store-images/PJSC/1.jpeg',
         './assets/store-images/PJSC/2.jpeg',
@@ -301,7 +301,7 @@ export class StoresService {
        jewelry. I also offer fine sterling silver, crystal, porcelain, and other small treasures.<br/>Come and\
        visit my space for all of your personal and gifting needs. Dealer #818<br/>Located within Antiques On\
        Central<br/>Owner - Merle Jo Finks',
-      hero: './assets/store-images/T4U/hero.jpg',
+      hero: './assets/store-images/T4U/hero-f.jpg',
       pics: [
         './assets/store-images/T4U/1.jpg',
         './assets/store-images/T4U/2.jpg',
@@ -347,7 +347,7 @@ export class StoresService {
                    sprawled about and no couch) he brings into the shop to sell for a great price.<br/><br/>At the Antique\
                     Plaza we stray away from stuffy (we may be a little dusty, but never stuffy!) to bring you great items\
                      for even better prices. You might not always find what you’re looking for, but you’re sure to find something better.',
-      hero: './assets/store-images/AP/hero.jpg',
+      hero: './assets/store-images/AP/hero-f.jpg',
       pics: [
         './assets/store-images/AP/a1.jpg',
         './assets/store-images/AP/d5.jpg',
@@ -404,7 +404,7 @@ export class StoresService {
             older items at great prices. Keep an eye out for our constantly rotating tag colors. We are\
              always accepting items from Consignors – Clothing and Accessories, Furniture, Home Décor,\
               Records, CDs/DVDs, Books, Shoes, Jewelry, Housewares, Collectibles, Games, Toys, and so much more!!',
-      hero: './assets/store-images/CIN/hero.png',
+      hero: './assets/store-images/CIN/hero-f.jpg',
       pics: [
         './assets/store-images/CIN/1.jpg',
         './assets/store-images/CIN/2.jpg',
@@ -441,7 +441,7 @@ export class StoresService {
        Collectibles, furniture, new Home Décor, and Boutique items.  Also home of Pittsburg Willy’s Gourmet \
       Hot Dogs and More, serving up Hot Dogs with gourmet toppings, homemade chili, sandwiches, Pierogies, \
       desserts and now serving breakfast on weekends.</br>Open 7 Days a week: 9 am – 5 pm, and Wed. until 8 pm.',
-      hero: './assets/store-images/MS/hero.jpg',
+      hero: './assets/store-images/MS/hero-f.jpg',
       pics: [
         './assets/store-images/MS/1.jpg',
         './assets/store-images/MS/2.jpg',
@@ -478,7 +478,7 @@ export class StoresService {
           East McKellips Road in Mesa and opened an antique shop, having gotten tired of traveling so much.\
             The shop, which was built in the 1920’s is a perfect showcase for their American Victorian\
              furniture and beautiful glassware, porcelain, silver, clocks, music boxes, lamps and paintings.',
-      hero: './assets/store-images/BEA/hero.jpg',
+      hero: './assets/store-images/BEA/hero-f.jpg',
       pics: [
         './assets/store-images/BEA/1.jpg',
         './assets/store-images/BEA/2.jpg',
@@ -506,7 +506,7 @@ export class StoresService {
       ],
       description: 'Located in the heart of downtown Mesa. Filled with wonderful antique furniture, art, \
       glassware, Prussia, vintage, hats, Art Deco, and lots of miscellaneous.',
-      hero: './assets/store-images/DA/hero.jpg',
+      hero: './assets/store-images/DA/hero-f.jpg',
       pics: [
         './assets/store-images/DA/1.jpg',
         './assets/store-images/DA/2.jpg',
@@ -539,7 +539,7 @@ export class StoresService {
       ],
       description: 'Specializing in militaria and historical antiques. Antiques, collectibles, books, prints,\
        swords, political, sports, tokens, US & foreign coins, medals & stamps.</br></br> George & Ko Notarpole',
-      hero: './assets/store-images/HBG/hero.JPG',
+      hero: './assets/store-images/HBG/hero-f.JPG',
       pics: [
         './assets/store-images/HBG/1.jpg',
         './assets/store-images/HBG/2.jpg',
@@ -571,7 +571,7 @@ export class StoresService {
       ],
       description: 'Glass stemware matching service, Fostoria, Cambridge, Tiffin, Heisey, etc. Miscellaneous\
        collectibles. Large collection of vintage linens.',
-      hero: './assets/store-images/TGU/hero.jpg',
+      hero: './assets/store-images/TGU/hero-f.jpg',
       pics: [
         './assets/store-images/TGU/1.jpg',
         './assets/store-images/TGU/2.jpg',
@@ -653,7 +653,7 @@ export class StoresService {
        as current patterns. We have a large inventory for you to select that exact piece from, or maybe we can\
         conduct a search from our nationwide network. By appointment only at Antiques on Central, 730 E\
          Missouri Ave, Phoenix, 85014.<br /><br />Nyla, & Jerry Kacer',
-      hero: './assets/store-images/KE/hero.jpg',
+      hero: './assets/store-images/KE/hero-f.jpg',
       pics: [
         './assets/store-images/KE/1.jpg',
         './assets/store-images/KE/2.jpg',
@@ -684,7 +684,7 @@ export class StoresService {
        Vintage Mexican and Native American jewelry, curios, basketry and pottery. An assortment of quality \
        porcelain, china, silver, statuary and furniture with an emphasis on the unusual and antiques of \
        interest to men. (Located two blocks south of Camelback and the Melrose District light rail stop)',
-      hero: './assets/store-images/PTPA/hero.jpg',
+      hero: './assets/store-images/PTPA/hero-f.jpg',
       pics: [
         './assets/store-images/PTPA/1.jpg',
         './assets/store-images/PTPA/2.jpg',
@@ -713,7 +713,7 @@ export class StoresService {
       ],
       description: 'Lamps – Shades – Lamp  & Shade Repairs - Antiques. Over 6,000 shades in stock. Custom lamp\
        making – antique lamp restoration – rewiring. Largest selection of shades in the country.',
-      hero: './assets/store-images/PL/hero.jpg',
+      hero: './assets/store-images/PL/hero-f.jpg',
       pics: [
         './assets/store-images/PL/1.jpg',
         './assets/store-images/PL/2.jpg',
@@ -741,7 +741,7 @@ export class StoresService {
       ],
       description: 'Under new ownership of Amanda Wilson, Amanda Wilson Antiques. over 18,000 sq ft of\
        beautyful antiques, decorative accessories, art, rugs, and many unusual and one of a kind items!',
-      hero: './assets/store-images/AG/hero.jpg',
+      hero: './assets/store-images/AG/hero-f.jpg',
       pics: [
         './assets/store-images/AG/1.jpg',
         './assets/store-images/AG/2.jpg',
@@ -773,9 +773,9 @@ export class StoresService {
       description: 'Appraisals for all purposes; Probate, estate, trusts, antiques, insurance,\
        collections, divorce, inventories, offices & household furnishings, moving, storage services, \
        damage, remodel/demolitions, tools & shop equipment. Barbara June Bradbury ASA, ISA',
-      hero: './assets/store-images/BAA/hero.jpg',
+      hero: './assets/store-images/BAA/hero-f.jpg',
       pics: [
-        './assets/store-images/BAA/hero.jpg',
+        './assets/store-images/BAA/hero-f.jpg',
       ],
       social: {
       },
@@ -829,9 +829,9 @@ export class StoresService {
           Slot machines, gumball machines, iron beds, and advertising items. Preservation,\
            restoration and repair services available. Always buying quality antique lamps, fixtures\
             and the Unusual. <br /><br />Joe D. & Jyoti Weaver',
-      hero: './assets/store-images/StA/hero.jpg',
+      hero: './assets/store-images/StA/hero-f.jpg',
       pics: [
-        './assets/store-images/StA/hero.jpg',
+        './assets/store-images/StA/hero-f.jpg',
       ],
       social: {
       },
@@ -855,7 +855,7 @@ export class StoresService {
       description: 'The finest European and American interiors. Twenty five years in business. Old\
        World craftsmanship, repair, restoration and refinishing services. We offer consignment,\
         pickup and delivery.',
-      hero: './assets/store-images/Mat/hero.jpg',
+      hero: './assets/store-images/Mat/hero-f.jpg',
       pics: [
         './assets/store-images/Mat/1.jpg',
         './assets/store-images/Mat/2.jpg',
@@ -897,7 +897,7 @@ export class StoresService {
                Perhaps you’re looking for a chic vintage table providing the perfect space for\
                 entertaining guests or an Antique to add to your collection? You will not be\
                  disappointed with our unique stock, so come visit us to find your perfect antique decor!',
-      hero: './assets/store-images/MA/hero.jpg',
+      hero: './assets/store-images/MA/hero-f.jpg',
       pics: [
         './assets/store-images/MA/1.jpg',
         './assets/store-images/MA/2.jpg',
