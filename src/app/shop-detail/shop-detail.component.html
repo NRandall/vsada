@@ -17,12 +17,12 @@
       'lazyLoading': true
     }">
     <div class="swiper-wrapper">
-      <img class="swiper-slide" [src]="store.hero">
-      <img class="swiper-slide" *ngFor="let pic of store.pics" [src]="pic">
+      <div class="swiper-slide" [ngStyle]="{'background-image': 'url(' + store.hero + ')'}"></div>
+      <div class="swiper-slide" *ngFor="let pic of store.pics" [ngStyle]="{'background-image':'url(' + pic + ')'}"></div>
     </div>
     <div class="swiper-pagination"></div>
     <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-prev"></div> 
   </swiper>
 
   <div class="card">

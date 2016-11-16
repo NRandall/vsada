@@ -1,37 +1,45 @@
 import { Injectable, EventEmitter, Output } from '@angular/core';
-
+// A service for interacting with store info
 @Injectable()
 export class StoresService {
+
+  // Variable declarations
   stores: Array<any>;
   store: any;
   query: string = '';
   @Output() queryUpdated = new EventEmitter();
 
+  // Returns the entire array of all store objects
   getStores() {
     return this.stores;
   };
 
+  // Sets the active store currently accessed by the user
   setStore(passedStore: any) {
     this.store = passedStore;
   }
 
+  // Returns entire store object for given store id
   getStore(id: number) {
     for (let i = 0; i < this.stores.length; i++) {
       if (this.stores[i].id === id) { return this.stores[i]; }
     }
   }
 
+  // Sets the current search parameter and emits the updated query to update
+  // any subscribed members
   setQuery(query: string) {
     this.query = query;
     this.queryUpdated.emit(this.query);
   }
 
+  // Returns the current search parameter
   getQuery() {
     return this.query;
   }
 
   constructor() {
-
+  // Contains an array of store objects with all store info
   this.stores = [
     {
       name: 'PAST Vintage',
@@ -65,7 +73,7 @@ export class StoresService {
       },
       region: 'Mesa'
     },
-//////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////
     {
       name: 'ANTIQUES ON CAMELBACK, L.L.C.',
       id: 1,

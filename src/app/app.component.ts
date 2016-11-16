@@ -7,6 +7,4 @@ import { StoresService } from './stores.service';
   styleUrls: ['./app.component.css'],
   providers: [StoresService]
 })
-export class AppComponent {
-  title = 'app works!';
-}
+export class AppComponent {}

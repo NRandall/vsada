@@ -23,25 +23,10 @@
   margin: auto;
 }    
 .swiper-slide {
-  object-fit: contain;
   height: 300px;
-  margin: auto;
-  text-align: center;
-  font-size: 18px;
-  background-image: url('./assets/asanoha-400px.png');
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .contact-icon {
@@ -51,7 +36,7 @@
 .social {
   float: left;
   position: static;
-/*  bottom: 300px;*/
+  /*  bottom: 300px;*/
   left: 95%;
   width: 100%;
   margin: auto;

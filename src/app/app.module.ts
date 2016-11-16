@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AgmCoreModule } from 'angular2-google-maps/core';
+
 import { routing } from './app.routing';
 import { SwiperModule } from '../../node_modules/angular2-useful-swiper';
 

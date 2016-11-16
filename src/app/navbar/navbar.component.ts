@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer } from '@angular/core';
+import { Component, Renderer } from '@angular/core';
 import { StoresService } from '../stores.service';
 import { Subscription } from 'rxjs/Rx';
 
@@ -7,9 +7,9 @@ import { Subscription } from 'rxjs/Rx';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent implements OnInit {
-  private searchTerm: Subscription;
-  terms: Array<any> = [
+export class NavbarComponent {
+  private searchTerm: Subscription;  // Subscription for the current search term
+  terms: Array<any> = [              // Array of tags for keyword menu
     'Mid-Century Modern',
     'Furniture',
     'Retro',
@@ -33,13 +33,16 @@ export class NavbarComponent implements OnInit {
     'Service'
   ];
 
-  term: string = '';
+  term: string = '';               // holds the search term locally
+
+  //
   searchBy(query: string) {
     this.storesService.setQuery(query);
     this.term = query;
   }
 
   constructor(private storesService: StoresService, private renderer: Renderer) {
+    // Uncomment to query stores array to populate keywords menu dynamically
     // for (let store of storesService.getStores()){
     //   if (store.tags.length > 0) {
     //     for (let tag of store.tags) {
@@ -50,13 +53,13 @@ export class NavbarComponent implements OnInit {
     //     }
     //   }
     // }
+
+    // Updates the searchterm in the storesService so that the shop list component
+    // knows what to filter by
     this.searchTerm = this.storesService.queryUpdated.subscribe(
       (updatedTerm: any) => {
         if (updatedTerm === '') { this.term = ''; };
       }
     );
   }
-
-  ngOnInit() {}
-
 }
