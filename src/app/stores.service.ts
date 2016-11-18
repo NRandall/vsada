@@ -748,7 +748,7 @@ export class StoresService {
         'Mall'
       ],
       description: 'Under new ownership of Amanda Wilson, Amanda Wilson Antiques. over 18,000 sq ft of\
-       beautyful antiques, decorative accessories, art, rugs, and many unusual and one of a kind items!',
+       beautiful antiques, decorative accessories, art, rugs, and many unusual and one of a kind items!',
       hero: './assets/store-images/AG/hero-f.jpg',
       pics: [
         './assets/store-images/AG/1.jpg',
