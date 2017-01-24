@@ -619,32 +619,49 @@ export class StoresService {
     //   region: 'Phoenix'
     // },
 //////////////////////////////////////////////////////
-    // @todo
-    // {
-    //   name: 'Scott Gram Antiques, Inc.',
-    //   id: 17,
-    //   address: [
-    //     '???'
-    //   ],
-    //   map: {lat: 33.415203, lng: -111.834871},
-    //   tags: [
-    //     'Glass'
-    //   ],
-    //   description: 'BUYING the Best art glass; Tiffany, Steuben, French Cameo including Daum Nancy & Galle, \
-    //   English cameo glass including Webb, Stevens & Williams.  High end Victorian art glass, also fine jewelry,\
-    //    sterling silver, bronze, paintings, etc…</br></br>Member ISA (International Society of Appraisers)',
-    //   hero: 'http://jaimiefield.com/wp-content/uploads/2013/10/Shrugging-Man.jpg',
-    //   pics: [
-    //     'http://jaimiefield.com/wp-content/uploads/2013/10/Shrugging-Man.jpg',
-    //   ],
-    //   social: {
-    //   },
-    //   contact: {
-    //     phone: '602-705-2503',
-    //     email: 'sdgram@cox.net'
-    //   },
-    //   region: 'Phoenix'
-    // },
+    {
+      name: 'Scott Gram Antiques, Inc.',
+      id: 17,
+      address: [
+        'Phoenix, AZ'
+      ],
+      map: {lat: 33.595109, lng: -112.018854},
+      tags: [
+        'Glass'
+      ],
+      description: 'BUYING the Best art glass; Tiffany, Steuben, French Cameo including Daum Nancy & Galle, \
+      English cameo glass including Webb, Stevens & Williams.  High end Victorian art glass, also fine jewelry,\
+       sterling silver, bronze, paintings, etc…</br></br>Member ISA (International Society of Appraisers)',
+      hero: './assets/store-images/SgA/hero-f.jpg',
+      pics: [
+        './assets/store-images/SgA/1.jpg',
+        './assets/store-images/SgA/2.jpg',
+        './assets/store-images/SgA/3.jpg',
+        './assets/store-images/SgA/4.jpg',
+        './assets/store-images/SgA/5.jpg',
+        './assets/store-images/SgA/6.jpg',
+        './assets/store-images/SgA/7.jpg',
+        './assets/store-images/SgA/8.jpg',
+        './assets/store-images/SgA/9.jpg',
+        './assets/store-images/SgA/10.jpg',
+        './assets/store-images/SgA/11.jpg',
+        './assets/store-images/SgA/12.jpg',
+        './assets/store-images/SgA/13.jpg',
+        './assets/store-images/SgA/14.jpg',
+        './assets/store-images/SgA/15.jpg',
+        './assets/store-images/SgA/16.jpg',
+        './assets/store-images/SgA/17.jpg',
+        './assets/store-images/SgA/18.jpg',
+      ],
+      social: {
+        facebook: 'https://www.facebook.com/ScottGramAntiques/?ref=py_c',
+      },
+      contact: {
+        phone: '602-705-2503',
+        email: 'sdgram@cox.net'
+      },
+      region: 'Phoenix'
+    },
 //////////////////////////////////////////////////////
     {
       name: 'Kacer Enterprises',

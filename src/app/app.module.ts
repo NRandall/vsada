@@ -26,7 +26,7 @@ import { RegionFilterPipe } from './region-filter.pipe';
     NavbarComponent,
     StoreFilterPipe,
     MapComponent,
-    RegionFilterPipe
+    RegionFilterPipe,
   ],
   imports: [
     BrowserModule,
