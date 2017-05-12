@@ -1,0 +1,18 @@
+<div class="map-comp">  
+  <h1>VSADA Store Locations</h1>
+  <sebm-google-map  
+      [latitude]="33.406286" 
+      [longitude]="-111.876038" 
+      [zoom]="zoom"
+      [scrollwheel]="false" 
+      [mapDraggable]="true">
+    <sebm-google-map-marker 
+      *ngFor="let store of stores"
+      [title]="store.name"
+      [zIndex]="store.z?store.z:0"
+      [latitude]="store.map.lat" 
+      [longitude]="store.map.lng"
+      (markerClick)="markClick(store.id)">
+    </sebm-google-map-marker>
+  </sebm-google-map>
+</div>

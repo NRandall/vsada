@@ -1,0 +1,28 @@
+<div (click)="clearSearch()" [routerLink]="['/']" *ngIf="filter" class="filter">
+  <div class="filter-icon"><i class="fa fa-close fa-4x" aria-hidden="true"></i></div>
+  <div>
+    <h4>
+      Filtering By: 
+      <span class=filter-query>{{filter|slice:0:1|uppercase}}{{filter|slice:1|lowercase}}</span>
+    </h4>
+    <h6>Click to clear</h6>
+  </div>
+</div>
+<div class="row" (input)="0"> 
+  <div 
+  *ngFor="let store of stores | storeFilter : term : region: tag" 
+  class="col-sm-6 col-md-4"
+  >
+    <a [routerLink]="['/store', store.id]">
+      <div class="thumbnail card">
+        <div class="img-container">
+          <img [attr.src]="store.hero" alt="{{store.name}} hero">
+        </div>
+        <div class="caption">
+          <h4 class="store-name">{{store.name | uppercase}}</h4>
+          <p class="address" [innerHTML]="store.address[0]"></p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
