@@ -15,6 +15,7 @@ import { ShopListComponent } from './shop-list/shop-list.component';
 import { StoreFilterPipe } from './store-filter.pipe';
 import { MapComponent } from './map/map.component';
 import { RegionFilterPipe } from './region-filter.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { RegionFilterPipe } from './region-filter.pipe';
     StoreFilterPipe,
     MapComponent,
     RegionFilterPipe,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
