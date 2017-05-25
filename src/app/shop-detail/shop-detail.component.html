@@ -1,7 +1,7 @@
-<div *ngIf="!store.id">
+<div *ngIf="store === undefined">
   Loading...
 </div>
-<div *ngIf="store.id" class="store-detail">
+<div *ngIf="store !== undefined" class="store-detail">
 
   <a class="back-button" [routerLink]="['/']">
     <i class="fa fa-chevron-circle-left fa-4x" aria-hidden="true"></i>
@@ -17,8 +17,8 @@
       'lazyLoading': true
     }">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" [ngStyle]="{'background-image': 'url(' + store.hero + ')'}"></div>
-      <div class="swiper-slide" *ngFor="let pic of store.pics" [ngStyle]="{'background-image':'url(' + pic + ')'}"></div>
+      <div class="swiper-slide" [ngStyle]="{'background-image': 'url(' + store.field_hero_image[0].url + ')'}"></div>
+      <div class="swiper-slide" *ngFor="let pic of store.field_gallery_images" [ngStyle]="{'background-image':'url(' + pic.url + ')'}"></div>
     </div>
     <div class="swiper-pagination"></div>
     <div class="swiper-button-next"></div>
@@ -26,54 +26,54 @@
   </swiper>
 
   <div class="card">
-    <h3 class="store-name text-uppercase">{{store.name}}</h3>
-    <p class="description" [innerHTML]="store.description">
+    <h3 class="store-name text-uppercase">{{store.title[0].value}}</h3>
+    <p class="description" [innerHTML]="store.body[0].value">
       <a href="/detailLink">more</a>
     </p>
     <hr>
-    <h5 *ngIf="store.contact.site">
-      <a href="{{store.contact.site}}" target="_blank">
+    <h5 *ngIf="store.field_website.length > 0">
+      <a href="{{store.field_website[0].uri}}" target="_blank">
         <i class="fa fa-external-link fa-lg contact-icon" aria-hidden="true"></i>
-        {{store.contact.site | slice : 7}}
+        {{store.field_website[0].uri | slice : 7}}
       </a>
     </h5>
-    <h5 *ngIf="store.contact.email">
-      <a href="mailto:{{store.contact.email}}">
+    <h5 *ngIf="store.field_email.length > 0">
+      <a href="mailto:{{store.field_email[0].value}}">
         <i class="fa fa-envelope fa-lg contact-icon" aria-hidden="true"></i>    
-        {{store.contact.email}}
+        {{store.field_email[0].value}}
       </a>
     </h5>
-    <h5 *ngIf="store.contact.phone">
-      <a href="tel:{{store.contact.phone}}">
+    <h5 *ngIf="store.field_phone_number.length > 0">
+      <a href="tel:{{store.field_phone_number[0].value}}">
         <i class="fa fa-phone fa-lg contact-icon" aria-hidden="true"></i>
-        {{store.contact.phone}}
+        {{store.field_phone_number[0].value}}
       </a>
     </h5>
     <br>
-    <h4 *ngFor="let address of store.address" [innerHTML]="address"></h4>
+    <h4 *ngFor="let address of store.field_address" [innerHTML]="address.value"></h4>
     <sebm-google-map  
-    [latitude]="store.map.lat" 
-    [longitude]="store.map.lng" 
+    [latitude]="lat" 
+    [longitude]="lng" 
     [zoom]="zoom" 
     [scrollwheel]="false" 
     [mapDraggable]="false"
-    (mapClick)="getMap(store.address[0])">
+    (mapClick)="getMap(store.field_address[0].value)">
     <sebm-google-map-marker
-    [latitude]="store.map.lat" 
-    [longitude]="store.map.lng">
+    [latitude]="lat" 
+    [longitude]="lng">
   </sebm-google-map-marker>
 </sebm-google-map>
 <div class="social">
-  <a *ngIf="store.social.facebook" href="{{store.social.facebook}}" target="_blank">
+  <a *ngIf="store.field_facebook.length > 0" href="{{store.field_facebook[0].uri}}" target="_blank">
     <i class="fa fa-facebook fa-4x social-icon" aria-hidden="true"></i>
   </a>
-  <a *ngIf="store.social.twitter" href="{{store.social.twitter}}" target="_blank">
+  <a *ngIf="store.field_twitter.length > 0" href="{{store.field_twitter[0].uri}}" target="_blank">
     <i class="fa fa-twitter fa-4x social-icon" aria-hidden="true"></i>
   </a>
-  <a *ngIf="store.social.instagram" href="{{store.social.instagram}}" target="_blank">
+  <a *ngIf="store.field_instagram_link.length > 0" href="{{store.field_instagram_link[0].uri}}" target="_blank">
     <i class="fa fa-instagram fa-4x social-icon" aria-hidden="true"></i>
   </a>
-  <a *ngIf="store.social.pinterest" href="{{store.social.pinterest}}" target="_blank">
+  <a *ngIf="store.field_pinterest" href="{{store.field_pinterest[0].uri}}" target="_blank">
     <i class="fa fa-pinterest fa-4x social-icon" aria-hidden="true"></i>
   </a>
 </div>   
@@ -82,9 +82,9 @@
 <div class="other-stores">
   <h4>Other dealers in this region:</h4>
   <ul class="store-list">
-    <li *ngFor="let close of stores | regionFilter:store.region:store.name">
-      <a [routerLink]="['/store', close.id]">  
-        {{close.name}}
+    <li *ngFor="let close of stores | regionFilter:store.field_region[0].value:store.title[0].value">
+      <a [routerLink]="['/store', makeLink(close.title[0].value)]">  
+        {{close.title[0].value}}
       </a>
     </li>
   </ul>

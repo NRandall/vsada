@@ -10,27 +10,25 @@ import { Subscription } from 'rxjs/Rx';
 export class NavbarComponent {
   private searchTerm: Subscription;  // Subscription for the current search term
   terms: Array<any> = [              // Array of tags for keyword menu
-    'Mid-Century Modern',
-    'Furniture',
-    'Retro',
-    'Danish',
-    'Jewelry',
-    'Primitive',
-    'Mall',
-    'Antiques',
-    'Vintage',
-    'Consignment',
-    'Collectibles',
+    'mid-century modern',
+    'furniture',
+    'retro',
+    'danish',
+    'jewelry',
+    'primitive',
+    'mall',
+    'antiques',
+    'vintage',
+    'consignment',
+    'collectibles',
     'china',
-    'primitives',
     'glassware',
     'silver',
-    'Military',
-    'Store',
-    'Glass',
-    'Sterling',
-    'Store',
-    'Service'
+    'military',
+    'store',
+    'glass',
+    'sterling',
+    'service'
   ];
 
   term: string = '';               // holds the search term locally

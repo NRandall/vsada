@@ -8,11 +8,11 @@
       [mapDraggable]="true">
     <sebm-google-map-marker 
       *ngFor="let store of stores"
-      [title]="store.name"
+      [title]="store.title[0].value"
       [zIndex]="store.z?store.z:0"
-      [latitude]="store.map.lat" 
-      [longitude]="store.map.lng"
-      (markerClick)="markClick(store.id)">
+      [latitude]="convertToInt(store.field_maplat[0].value)" 
+      [longitude]="convertToInt(store.field_maplng[0].value)"
+      (markerClick)="markClick(store)">
     </sebm-google-map-marker>
   </sebm-google-map>
 </div>

@@ -10,7 +10,9 @@
       "assets": [
         "assets",
         "favicon.ico",
-        "htaccess"
+        ".htaccess",
+        "updateStores.php",
+        "stores.json"
       ],
       "index": "index.html",
       "main": "main.ts",

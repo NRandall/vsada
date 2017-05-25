@@ -1,7 +1,8 @@
 import { Component, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { StoresService } from '../stores.service';
 import { Subscription } from 'rxjs/Rx';
+import { Response } from '@angular/http';
+import { StoresService } from '../stores.service';
 
 // Component for controlling the shops index listing -
 // Creates a grid of informational store card links that can be filtered
@@ -16,7 +17,7 @@ export class ShopListComponent implements OnDestroy {
   // Variable declaration
   private subscription: Subscription;    // Subscription for url params
   private searchTerm: Subscription;      // Subscription for navbar search term
-  stores: Array<any>;                    // Holds store array locally
+  stores: any[] = [];                    // Holds store array locally
   term = this.storesService.getQuery();  // Holds the search term locally
   region: any;                           // Holds region filter if any
   tag: any;                              // Holds tag filter if any
@@ -27,14 +28,24 @@ export class ShopListComponent implements OnDestroy {
     this.storesService.setQuery('');
   }
 
+  makeLink(linkText) {
+    return linkText.replace(/\W+/g, "").toLowerCase();
+  }
+
   constructor(private storesService: StoresService, private activatedRoute: ActivatedRoute) {
     // Gets all stores from the storesService and stores as local array
-    this.stores = this.storesService.getStores()
-    .sort(function(a, b){
-      let keyA = a.name.toUpperCase(),
-          keyB = b.name.toUpperCase();
-      return keyA < keyB ? -1 : keyA > keyB ? 1 : 0;
-    });
+    this.storesService.getStoresFromDrupal()
+      .subscribe(
+        (res: Response) => {
+          this.stores = res.json()
+          .sort(function(a, b){
+            let keyA = a.title[0].value.toUpperCase(),
+                keyB = b.title[0].value.toUpperCase();
+            return keyA < keyB ? -1 : keyA > keyB ? 1 : 0;
+          });
+        },
+        err => console.log(err)
+      );
 
     // Subscribes to the activatedRoute to update filter parameters
     // in real time when they are changed via URL parameters
